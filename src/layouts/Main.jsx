@@ -7,7 +7,7 @@ import Routing from "../routes/Routing";
 const Main = () => {
   const pages = {
     beranda: "/beranda",
-    jadwal: "jadwal",
+    jadwal: "/jadwal",
     lomba: "/lomba",
     riwayat: "/riwayat",
     login: "/login",
@@ -15,9 +15,9 @@ const Main = () => {
   };
 
   return (
-    <main className='h-[200vh]'>
+    <main className='h-[200vh] bg-baseColor '>
       <Navbar pages={pages} />
-      <BoxContainer className='bg-red-500 pt-[70px]'>
+      <BoxContainer className='pt-[70px]'>
         <Routing pages={pages} />
       </BoxContainer>
       <Footer />
