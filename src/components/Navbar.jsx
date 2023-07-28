@@ -47,16 +47,9 @@ const Navbar = ({ pages, ...props }) => {
               </Link>
             </li>
             <li>
-<<<<<<< HEAD
               <Link to={pages.riwayat} className={headerStyle.li.base}>
                 Riwayat
               </Link>
-=======
-              <Link to={pages.jadwal}>Jadwal</Link>
-            </li>
-            <li>
-              <Link to={pages.riwayat}>Riwayat</Link>
->>>>>>> bf81a1b837e2e8756c793ed76bc3da9a54e4e0c6
             </li>
           </ul>
           <ul className={`${headerStyle.ul.bground} ${headerStyle.ul.layout}`}>
