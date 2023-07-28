@@ -16,7 +16,11 @@ const headerStyle = {
   },
   ul: {
     layout: "flex items-center gap-3 capitalize",
-    bground: "bg-purple-400 py-3 px-6 rounded-full text-white",
+    bground: "bg-[#6A5AE0] py-3 px-6 rounded-full text-white",
+  },
+  li: {
+    hover: "py-2 px-3 bg-slate-100",
+    focus: "py-2 px-3 bg-white",
   },
 };
 
