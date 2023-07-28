@@ -34,6 +34,9 @@ const Navbar = ({ pages, ...props }) => {
               <Link to={pages.lomba}>Lomba</Link>
             </li>
             <li>
+              <Link to={pages.jadwal}>Jadwal</Link>
+            </li>
+            <li>
               <Link to={pages.riwayat}>Riwayat</Link>
             </li>
           </ul>
