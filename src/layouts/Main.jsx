@@ -1,8 +1,7 @@
-import React from "react";
 import { Beranda, LandingPage, Lomba } from "../pages";
-import { Navbar } from "../components/";
+import { Navbar, Footer } from "../components/";
 import { Link } from "react-router-dom";
-import Container from "./Container";
+import BoxContainer from "./BoxContainer";
 import Routing from "../routes/Routing";
 
 const Main = () => {
@@ -17,11 +16,12 @@ const Main = () => {
   };
 
   return (
-    <main>
+    <main className='h-[200vh]'>
       <Navbar pages={pages} />
-      <Container className='bg-red-500'>
+      <BoxContainer className='bg-red-500'>
         <Routing pages={pages} />
-      </Container>
+      </BoxContainer>
+      <Footer />
     </main>
   );
 };
