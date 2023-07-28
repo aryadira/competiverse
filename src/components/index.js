@@ -7,5 +7,6 @@ import ModalSearch from "./ModalSearch";
 import Navbar from "./Navbar";
 import Search from "./Search";
 import Logo from "./Logo";
+import Jumbotron from "./Jumbotron";
 
-export { Badge, Button, Card, Dropdown, Footer, ModalSearch, Navbar, Search, Logo };
+export { Badge, Button, Card, Dropdown, Footer, ModalSearch, Navbar, Search, Logo, Jumbotron };

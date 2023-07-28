@@ -1,6 +1,5 @@
 const headerStyle = {
   base: "w-full backdrop-blur-sm bg-white/40 py-3 px-0 fixed",
-  bground: "",
   layout: {
     between: "flex justify-between items-center",
     center: "flex justify-center items-center",
@@ -12,7 +11,7 @@ const headerStyle = {
   },
   ul: {
     layout: "flex items-center gap-2 capitalize",
-    bground: "bg-[#6A5AE0] px-2 py-4 rounded-full text-white",
+    bground: "bg-[#6A5AE0] px-2 py-3 rounded-full text-white",
   },
   link: {
     base: "py-2 px-4",
