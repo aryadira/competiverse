@@ -1,5 +1,4 @@
 import BoxContainer from "../layouts/BoxContainer";
-import { variant } from "../utils/utils";
 import { Link } from "react-router-dom";
 import logo from "../assets/icons/logocompetiverse.png";
 
@@ -29,7 +28,7 @@ const headerStyle = {
 const Navbar = ({ pages, ...props }) => {
   return (
     <header className={`${headerStyle.base} ${headerStyle.layout.between}`}>
-      <BoxContainer className='w-full'>
+      <BoxContainer className='w-full mx-auto'>
         <nav className={headerStyle.layout.between}>
           <div className={headerStyle.layout.between}>
             <img src={logo} alt='logo' className='w-[45px]' />
@@ -47,16 +46,9 @@ const Navbar = ({ pages, ...props }) => {
               </Link>
             </li>
             <li>
-<<<<<<< HEAD
               <Link to={pages.riwayat} className={headerStyle.li.base}>
                 Riwayat
               </Link>
-=======
-              <Link to={pages.jadwal}>Jadwal</Link>
-            </li>
-            <li>
-              <Link to={pages.riwayat}>Riwayat</Link>
->>>>>>> bf81a1b837e2e8756c793ed76bc3da9a54e4e0c6
             </li>
           </ul>
           <ul className={`${headerStyle.ul.bground} ${headerStyle.ul.layout}`}>
