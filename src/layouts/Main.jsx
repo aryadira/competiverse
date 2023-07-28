@@ -6,7 +6,6 @@ import Routing from "../routes/Routing";
 
 const Main = () => {
   const pages = {
-    index: "/",
     beranda: "/beranda",
     jadwal: "jadwal",
     lomba: "/lomba",

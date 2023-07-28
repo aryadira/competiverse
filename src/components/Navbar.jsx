@@ -2,27 +2,31 @@ import BoxContainer from "../layouts/BoxContainer";
 import { variant } from "../utils/utils";
 import { Link } from "react-router-dom";
 
-const Navbar = ({ pages, ...props }) => {
-  const navStyle = variant("rounded shadow-xl hover:shadow-none font-semibold transition", {
-    color: {
-      primary: "bg-blue-500 hover:bg-blue-600 shadow-blue-300 text-white",
-      danger: "bg-red-500 hover:bg-red-600 shadow-red-300 text-white",
-    },
-    size: {
-      small: "py-1 px-3",
-      medium: "py-2 px-4",
-    },
-  });
+const headerStyle = {
+  base: "w-full backdrop-blur-sm bg-white/40 py-3 px-0 fixed",
+  bground: "",
+  layout: {
+    between: "flex justify-between items-center",
+    center: "flex justify-center items-center",
+    around: "flex justify-around items-center",
+    evenly: "flex justify-evenly items-center",
+  },
+  logo: {
+    size: "text-xl",
+  },
+  ul: {
+    layout: "flex items-center gap-3 capitalize",
+    bground: "bg-purple-400 py-3 px-6 rounded-full text-white",
+  },
+};
 
+const Navbar = ({ pages, ...props }) => {
   return (
-    <header className='w-full backdrop-blur-sm bg-white/40 py-3 px-0 fixed'>
-      <BoxContainer className=''>
-        <nav>
-          <div className='logo'>Logo</div>
-          <ul>
-            <li>
-              <Link to={pages.index}>Index</Link>
-            </li>
+    <header className={`${headerStyle.base} ${headerStyle.layout.between}`}>
+      <BoxContainer className='w-full'>
+        <nav className={headerStyle.layout.between}>
+          <div className={headerStyle.logo.size}>Logo</div>
+          <ul className={`${headerStyle.ul.layout} ${headerStyle.ul.bground}`}>
             <li>
               <Link to={pages.beranda}>Beranda</Link>
             </li>
@@ -33,14 +37,14 @@ const Navbar = ({ pages, ...props }) => {
               <Link to={pages.riwayat}>Riwayat</Link>
             </li>
           </ul>
-          <div className='navUser'>
+          <ul className={`${headerStyle.ul.bground} ${headerStyle.ul.layout}`}>
             <li>
-              <Link to={pages.login}>login</Link>
+              <Link to={pages.login}>Login</Link>
             </li>
             <li>
-              <Link to={pages.register}>register</Link>
+              <Link to={pages.register}>Register</Link>
             </li>
-          </div>
+          </ul>
         </nav>
       </BoxContainer>
     </header>
