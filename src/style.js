@@ -14,7 +14,7 @@ const headerStyle = {
     layout: "flex items-center gap-2 capitalize",
     bground: "bg-[#6A5AE0] px-2 py-4 rounded-full text-white",
   },
-  li: {
+  link: {
     base: "py-2 px-4",
     hover: "hover:bg-slate-100",
     focus: "py-2 px-4 bg-white text-[#6A5AE0] rounded-full",

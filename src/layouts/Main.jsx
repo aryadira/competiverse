@@ -15,7 +15,7 @@ const Main = () => {
   };
 
   return (
-    <main className='h-[200vh] bg-baseColor '>
+    <main className='bg-baseColor relative h-max'>
       <Navbar pages={pages} />
       <BoxContainer className='pt-[70px]'>
         <Routing pages={pages} />
