@@ -10,7 +10,7 @@ const Home = {
 
 const Beranda = () => {
   return (
-    <section className={Home.section}>
+    <section id="berandaHeader" className={Home.section}>
       <div className={Home.container}>
         <div className={Home.content}>
           <h1 className={Home.heading}>Temukan. Cari Lomba yang Anda Minati!!</h1>
