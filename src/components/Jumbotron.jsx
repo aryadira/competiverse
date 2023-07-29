@@ -1,13 +1,13 @@
 import rightImg from "../assets/images/right-img.svg";
-import headerStyle from "../style";
+import { headerStyle } from "../style";
 import Button from "./Button";
 import Gradient from "./Gradient";
 
 const Jumbotron = ({heading, paragraph, ...props}) => {
   return (
-    <section className='dark:bg-gray-900 h-max'>
-      <div className='mx-auto grid lg:grid-cols-2 justify-between w-full'>
-        <div className='flex flex-col justify-center '>
+    <section className='dark:bg-gray-900 h-max mt-[80px]'>
+      <div className='mx-auto grid lg:grid-cols-2 justify-between w-full' data-aos='fade-right'>
+        <div className='flex flex-col justify-center'>
           <h1 className='mb-4 text-3xl font-bold tracking-tight text-gray-900 md:text-5xl lg:text-5xl dark:text-white'>
             Bingung Cari Lomba? <br />
             <span className={`text-3xl md:text-5xl lg:text-5xl ${headerStyle.logo.style}`}>Competiverse</span> solusinya!
