@@ -26,7 +26,7 @@ const LandingPage = () => {
         </div>
       </section>
       <section className=''>
-        <h2 data-aos='fade-down' className='md:text-[39px] text-[32px] text-center mb-[90px] font-semibold text-gray-700'>
+        <h2 data-aos='fade-down' className='md:text-[39px] text-[32px] text-center mb-[90px] md:mt-0 mt-[90px] font-semibold text-gray-700'>
           Tersedia banyak Kategori yang Sesuai dengan Minat mu!!
         </h2>
 

@@ -1,7 +1,7 @@
 import BoxContainer from "../layouts/BoxContainer";
 import { Link } from "react-router-dom";
 import { Logo } from "../components";
-import { headerStyle } from "../style.js";
+import { headerStyle, gradient } from "../style.js";
 
 const Navbar = ({ pages, ...props }) => {
   return (
@@ -62,7 +62,7 @@ const Navbar = ({ pages, ...props }) => {
           </ul>
           <ul className={`${headerStyle.ul.bground} ${headerStyle.ul.layout} md:${headerStyle.ul.layout} hidden`}>
             <li>
-              <Link to={pages.login} className={headerStyle.link.base}>
+              <Link to={pages.login} className={`${headerStyle.link.base} hover:text-gray-300`}>
                 Login
               </Link>
             </li>

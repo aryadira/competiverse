@@ -11,7 +11,7 @@ export const headerStyle = {
   },
   ul: {
     layout: "flex items-center gap-2 capitalize",
-    bground: "bg-[#6A5AE0] px-2 py-3 rounded-full text-white",
+    bground: "bg-[#6A5AE0] px-2 py-3 rounded-full text-white hover:bg-gradient-to-r from-purple-600 to-pink-500",
   },
   link: {
     base: "py-2 px-4",

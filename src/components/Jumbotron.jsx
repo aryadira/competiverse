@@ -5,7 +5,7 @@ import Gradient from "./Gradient";
 
 const Jumbotron = () => {
   return (
-    <section className='dark:bg-gray-900 h-max'>
+    <section className='dark:bg-gray-900 h-max mt-[80px]'>
       <div className='mx-auto grid lg:grid-cols-2 justify-between w-full' data-aos='fade-right'>
         <div className='flex flex-col justify-center'>
           <h1 className='mb-4 text-3xl font-bold tracking-tight text-gray-900 md:text-5xl lg:text-5xl dark:text-white'>
