@@ -47,7 +47,7 @@ export const categories = [
 export const recomends = [
   {
     tag: "Fotografi",
-    title: "Lomba Fotografi dan Desain",
+    title: "Lomba Fotografi",
     date: "Mulai 01 Juli - 31 Juli",
     price: "Gratis",
     poster: cardImage1,
