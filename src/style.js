@@ -1,5 +1,5 @@
-const headerStyle = {
-  base: "w-full backdrop-blur-sm bg-white/40 py-3 px-0 fixed",
+export const headerStyle = {
+  base: "w-full backdrop-blur-sm bg-white/60 py-3 px-0 fixed z-[100]",
   layout: {
     between: "flex justify-between items-center",
     center: "flex justify-center items-center",
@@ -15,9 +15,13 @@ const headerStyle = {
   },
   link: {
     base: "py-2 px-4",
-    hover: "hover:bg-slate-100",
+    hoverBg: "hover:bg-gray-200",
+    hoverText: "hover:text-mainColor",
     focus: "py-2 px-4 bg-white text-[#6A5AE0] rounded-full",
   },
 };
 
-export default headerStyle;
+export const gradient = {
+  purpleToPink: "bg-gradient-to-r from-purple-600 to-pink-500",
+  textGradient: "bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text font-semibold",
+};

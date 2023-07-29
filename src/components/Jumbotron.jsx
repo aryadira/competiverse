@@ -1,5 +1,5 @@
 import rightImg from "../assets/images/right-img.svg";
-import headerStyle from "../style";
+import { headerStyle } from "../style";
 import Button from "./Button";
 import Gradient from "./Gradient";
 

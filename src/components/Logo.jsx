@@ -1,5 +1,5 @@
 import logo from "../assets/icons/logocompetiverse.png";
-import headerStyle from "../style.js";
+import { headerStyle } from "../style";
 
 const Logo = ({ className }) => {
   return (
