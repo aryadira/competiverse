@@ -5,11 +5,11 @@ import headerStyle from "../style.js";
 
 const Navbar = ({ pages, ...props }) => {
   return (
-    <header className={`${headerStyle.base} ${headerStyle.layout.between} top-0`}>
-      <BoxContainer className='w-full mx-auto'>
-        <nav className={headerStyle.layout.between}>
-          <Logo />
-          <ul className={`${headerStyle.ul.layout}`}>
+    <header className={`${headerStyle.base} ${headerStyle.layout.between} top-0 relative`}>
+      <BoxContainer className='w-full'>
+        <nav className={`${headerStyle.layout.between} `}>
+          <Logo className='text-xl ml-2' />
+          <ul className={`md:${headerStyle.ul.layout} hidden`}>
             <li>
               <Link to={pages.beranda} className={`${headerStyle.link.base} ${headerStyle.link.hoverText}`}>
                 Beranda
@@ -26,7 +26,7 @@ const Navbar = ({ pages, ...props }) => {
               </Link>
             </li>
           </ul>
-          <ul className={`${headerStyle.ul.bground} ${headerStyle.ul.layout}`}>
+          <ul className={`${headerStyle.ul.bground} ${headerStyle.ul.layout} md:${headerStyle.ul.layout} hidden`}>
             <li>
               <Link to={pages.login} className={headerStyle.link.base}>
                 Login
@@ -38,6 +38,54 @@ const Navbar = ({ pages, ...props }) => {
               </Link>
             </li>
           </ul>
+          <button
+            data-collapse-toggle='navbar-hamburger'
+            type='button'
+            className='z-20 md:hidden inline-flex items-center justify-center p-2 w-10 h-10 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
+            aria-controls='navbar-hamburger'
+            aria-expanded='false'>
+            <span className='sr-only'>Open main menu</span>
+            <svg className='w-5 h-5' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 17 14'>
+              <path stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M1 1h15M1 7h15M1 13h15' />
+            </svg>
+          </button>
+          <div className='md:hidden inline-flex max-w-screen absolute top-[70px] right-[40px] z-10' id='navbar-hamburger'>
+            <ul className='flex flex-col font-medium mt-4 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700'>
+              <li>
+                <a href='/beranda' className='block py-2 pl-3 pr-4 text-white bg-mainColor rounded dark:bg-blue-600' aria-current='page'>
+                  Beranda
+                </a>
+              </li>
+              <li>
+                <a
+                  href='/jadwal'
+                  className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'>
+                  Jadwal
+                </a>
+              </li>
+              <li>
+                <a
+                  href='/riwayat'
+                  className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white'>
+                  Riwayat
+                </a>
+              </li>
+              <li>
+                <a
+                  href='/login'
+                  className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'>
+                  Login
+                </a>
+              </li>
+              <li>
+                <a
+                  href='/register'
+                  className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'>
+                  Register
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </BoxContainer>
     </header>

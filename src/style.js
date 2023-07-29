@@ -7,7 +7,7 @@ const headerStyle = {
     evenly: "flex justify-evenly items-center",
   },
   logo: {
-    style: "ml-2 text-xl bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text font-semibold text-transparent",
+    style: "bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text font-semibold text-transparent",
   },
   ul: {
     layout: "flex items-center gap-2 capitalize",

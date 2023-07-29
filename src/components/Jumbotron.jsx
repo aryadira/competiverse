@@ -1,41 +1,31 @@
 import rightImg from "../assets/images/right-img.svg";
+import headerStyle from "../style";
+import Button from "./Button";
 import Gradient from "./Gradient";
 
 const Jumbotron = ({heading, paragraph, ...props}) => {
   return (
-    <div>
-      <section className='transparent dark:bg-gray-900 h-screen'>
-        <div className='py-8 mx-auto lg:py-16 grid lg:grid-cols-2 justify-between w-full'>
-          <div className='flex flex-col justify-center '>
-            <h1 className='mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white'>
-              {heading}
-            </h1>
-            <p className='mb-8 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400'>
-              {paragraph}
-            </p>
-            <div className='flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4'>
-              <a
-                href='#'
-                className='inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900'>
-                Telusuri
-                <svg className='w-3.5 h-3.5 ml-2' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 14 10'>
-                  <path stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M1 5h12m0 0L9 1m4 4L9 9' />
-                </svg>
-              </a>
-              <a
-                href='#'
-                className='inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800'>
-                Pelajari Lebih Lanjut
-              </a>
-            </div>
-          </div>
-          <div className='right  flex justify-end'>
-            <img src={rightImg} alt='rightimg' />
-            <Gradient className='w-[300px] h-[300px]' />
+    <section className='dark:bg-gray-900 h-max'>
+      <div className='mx-auto grid lg:grid-cols-2 justify-between w-full'>
+        <div className='flex flex-col justify-center '>
+          <h1 className='mb-4 text-3xl font-bold tracking-tight text-gray-900 md:text-5xl lg:text-5xl dark:text-white'>
+            Bingung Cari Lomba? <br />
+            <span className={`text-3xl md:text-5xl lg:text-5xl ${headerStyle.logo.style}`}>Competiverse</span> solusinya!
+          </h1>
+          <p className='mb-8 text-md font-normal text-gray-500 lg:text-xl dark:text-gray-400'>
+            Dengan kehadiran Competiverse, mencari lomba tidak akan pernah menjadi masalah lagi. Platform ini menyediakan beragam lomba menarik dari
+            berbagai penyelenggara. Kemudahan dan efisiensinya membuat proses pencarian lomba menjadi jauh lebih praktis dan efektif.
+          </p>
+          <div className='flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4'>
+            <Button children='Get Started' />
           </div>
         </div>
-      </section>
-    </div>
+        <div className='right flex md:justify-end lg:my-0 mt-20 justify-center items-center'>
+          <img src={rightImg} alt='rightimg' />
+          <Gradient className='w-[300px] h-[300px]' />
+        </div>
+      </div>
+    </section>
   );
 };
 
