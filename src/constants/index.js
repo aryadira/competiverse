@@ -47,20 +47,20 @@ export const categories = [
 export const recomends = [
   {
     tag: "Fotografi",
-    title: "Lomba Fotografi",
+    title: "Lomba Fotografi dan Desain",
     date: "Mulai 01 Juli - 31 Juli",
     price: "Gratis",
     poster: cardImage1,
   },
   {
-    tag: "Fotografi",
+    tag: "Visual",
     title: "Lomba Poster",
     date: "Mulai 01 Juli - 31 Juli",
     price: "Gratis",
     poster: cardImage2,
   },
   {
-    tag: "Fotografi",
+    tag: "Umum",
     title: "Lomba GCSO",
     date: "Mulai 01 Juli - 31 Juli",
     price: "Gratis",
