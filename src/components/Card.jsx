@@ -2,6 +2,25 @@ import React from "react";
 import { recomends } from "../constants";
 
 const Card = () => {
+  const labelCategories = {
+    fotografi: "text-xs py-[1px] px-2 bg-blue-100 border-[1px] text-blue-400 border-blue-300 inline-block rounded-full",
+    visual: "text-xs py-[1px] px-2 bg-purple-100 border-[1px] text-purple-400 border-purple-300 inline-block rounded-full",
+    umum: "text-xs py-[1px] px-2 bg-green-100 border-[1px] text-green-400 border-green-300 inline-block rounded-full",
+    gaming: "text-xs py-[1px] px-2 bg-pink-100 border-[1px] text-pink-400 border-pink-300 inline-block rounded-full",
+  };
+
+  function labelColor(category) {
+    if (category == "Fotografi") {
+      return labelCategories.fotografi;
+    } else if (category == "Visual") {
+      return labelCategories.visual;
+    } else if (category == "Umum") {
+      return labelCategories.umum;
+    } else if (category == "Gaming") {
+      return labelCategories.gaming;
+    }
+  }
+
   return (
     <div className='w-full h-auto grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 '>
       {recomends.map((recomend) => (
@@ -12,7 +31,7 @@ const Card = () => {
           </div>
           <div className='mt-[8px] mx-[15px] mb-[17px] gap-y-10 '>
             <div className=''>
-              <p className='text-xs py-[1px] px-2 bg-blue-100 border-[1px] text-blue-400 border-blue-300 inline-block rounded-full'>{recomend.tag}</p>
+              <p className={labelColor(recomend.tag)}>{recomend.tag}</p>
               <h3 className='mt-[3px] font-[900] text-xl text-[#444444] truncate block'>{recomend.title}</h3>
               <p className='mb-5 text-gray-400 text-sm'>{recomend.date}</p>
             </div>
