@@ -7,13 +7,12 @@ const LandingPage = () => {
     <div>
       <Jumbotron />
       <section className=''>
-        <h2 data-aos='fade-down' className='md:text-[39px] text-[32px] text-center mt-[180px] mb-[90px] font-semibold text-gray-700'>
+        <h2 className='md:text-[39px] text-[32px] text-center mt-[180px] mb-[90px] font-semibold text-gray-700'>
           Kenapa harus memilih Competiverse?
         </h2>
         <div className='grid lg:grid-cols-4 sm:grid-cols-2 lg:grid-rows-2 gap-4'>
           {benefits.map((benefit) => (
             <div
-              data-aos='fade-right'
               className='card flex p-[1.5625rem] flex-col items-start gap-[1.25rem] rounded-[1.5625rem] border-2 border-solid border-6A5AE0 bg-white'
               key={benefit.id}>
               <h3 className='text-[1.5rem] capitalize font-bold text-gray-700 flex gap-2'>
@@ -26,7 +25,7 @@ const LandingPage = () => {
         </div>
       </section>
       <section className=''>
-        <h2 data-aos='fade-down' className='md:text-[39px] text-[32px] text-center mb-[90px] md:mt-0 mt-[90px] font-semibold text-gray-700'>
+        <h2 className='md:text-[39px] text-[32px] text-center mb-[70px] md:mt-0 mt-[90px] font-semibold text-gray-700'>
           Tersedia banyak Kategori yang Sesuai dengan Minat mu!!
         </h2>
 

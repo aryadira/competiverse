@@ -23,5 +23,5 @@ export const headerStyle = {
 
 export const gradient = {
   purpleToPink: "bg-gradient-to-r from-purple-600 to-pink-500",
-  textGradient: "bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text font-semibold",
+  textGradient: "bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text font-semibold text-transparent",
 };

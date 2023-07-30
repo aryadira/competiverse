@@ -2,9 +2,9 @@ import efisien from "../assets/icons/efisien.svg";
 import informatif from "../assets/icons/informatif.svg";
 import jelas from "../assets/icons/jelas.svg";
 import mudah from "../assets/icons/mudah.svg";
-import cardImage1 from "../assets/images/cardImage1.svg"
-import cardImage2 from "../assets/images/cardImage2.svg"
-import cardImage3 from "../assets/images/cardImage3.svg"
+import cardImage1 from "../assets/images/cardImage1.svg";
+import cardImage2 from "../assets/images/cardImage2.svg";
+import cardImage3 from "../assets/images/cardImage3.svg";
 import teknologi from "../assets/images/teknologi.svg";
 import visual from "../assets/images/visual.svg";
 import umum from "../assets/images/umum.svg";
@@ -80,4 +80,4 @@ export const recomends = [
     price: "Gratis",
     poster: cardImage1,
   },
-]
+];

@@ -9,11 +9,7 @@ function App() {
     AOS.refresh();
   }, []);
 
-  return (
-    <div>
-      <Main />
-    </div>
-  );
+  return <Main />;
 }
 
 export default App;
