@@ -1,5 +1,5 @@
 import { Beranda, LandingPage, Lomba, Register, Login } from "../pages";
-import { Navbar, Footer } from "../components/";
+import { Navbar, Footer, Card } from "../components/";
 import { Link } from "react-router-dom";
 import BoxContainer from "./BoxContainer";
 import Routing from "../routes/Routing";

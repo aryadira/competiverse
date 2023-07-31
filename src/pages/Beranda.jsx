@@ -39,7 +39,7 @@ const Beranda = () => {
               Temukan lomba-lomba menarik sesuai minat dan bakat Anda. Raih prestasi gemilang dalam passion Anda. Bergabunglah sekarang.
             </p>
             <div className='flex justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4'>
-              <Button children='Temukan' />
+              <Button children='Temukan' navHasLink='#recomendCard' />
             </div>
           </div>
         </div>
