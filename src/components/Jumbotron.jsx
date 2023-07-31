@@ -3,9 +3,10 @@ import { headerStyle } from "../style";
 import Button from "./Button";
 import Gradient from "./Gradient";
 
-const Jumbotron = ({heading, paragraph, ...props}) => {
+const Jumbotron = ({ heading, paragraph, ...props }) => {
   return (
     <section className='dark:bg-gray-900 h-max mt-[80px]'>
+      <Gradient className='w-[800px] h-[500px] -left-[200px] -top-[200px] ' />
       <div className='mx-auto grid lg:grid-cols-2 justify-between w-full' data-aos='fade-right'>
         <div className='flex flex-col justify-center'>
           <h1 className='mb-4 text-3xl font-bold tracking-tight text-gray-900 md:text-5xl lg:text-5xl dark:text-white'>
@@ -22,7 +23,7 @@ const Jumbotron = ({heading, paragraph, ...props}) => {
         </div>
         <div className='right flex md:justify-end lg:my-0 mt-20 justify-center items-center'>
           <img src={rightImg} alt='rightimg' />
-          <Gradient className='w-[300px] h-[300px]' />
+          <Gradient className='w-[600px] h-[600px] -right-[400px] top-[300px] -z-10' />
         </div>
       </div>
     </section>
