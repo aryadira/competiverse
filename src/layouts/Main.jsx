@@ -1,4 +1,4 @@
-import { Beranda, LandingPage, Lomba } from "../pages";
+import { Beranda, LandingPage, Lomba, Register, Login } from "../pages";
 import { Navbar, Footer } from "../components/";
 import { Link } from "react-router-dom";
 import BoxContainer from "./BoxContainer";

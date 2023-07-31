@@ -72,6 +72,8 @@ const Navbar = ({ pages, ...props }) => {
               </Link>
             </li>
           </ul>
+
+          {/* hamburger menu */}
           <button
             data-collapse-toggle='navbar-hamburger'
             type='button'
@@ -83,7 +85,7 @@ const Navbar = ({ pages, ...props }) => {
               <path stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M1 1h15M1 7h15M1 13h15' />
             </svg>
           </button>
-          <div className='md:hidden inline-flex max-w-screen absolute top-[70px] right-[40px] z-[100] bg-white ' id='navbar-hamburger'>
+          <div className='hidden w-[85%] md:hidden absolute top-[60px] bg-white' id='navbar-hamburger'>
             <ul className='flex flex-col font-medium mt-4 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700'>
               <li>
                 <a href='/beranda' className='block py-2 pl-3 pr-4 text-white bg-mainColor rounded dark:bg-blue-600' aria-current='page'>
