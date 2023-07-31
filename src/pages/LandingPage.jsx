@@ -1,12 +1,13 @@
-import { Jumbotron } from "../components";
+import { Jumbotron, Button } from "../components";
 import { benefits, categories } from "../constants";
-import { headerStyle, gradient } from "../style";
+import { headerStyle, gradient, Home } from "../style";
+import piala from "../assets/images/piala.svg";
 
 const LandingPage = () => {
   return (
     <div>
       <Jumbotron />
-      <section className=''>
+      <section id='benefit'>
         <h2 className='md:text-[39px] text-[32px] text-center mt-[180px] mb-[90px] font-semibold text-gray-700'>
           Kenapa harus memilih Competiverse?
         </h2>
@@ -24,7 +25,7 @@ const LandingPage = () => {
           ))}
         </div>
       </section>
-      <section className=''>
+      <section id='category'>
         <h2 className='md:text-[39px] text-[32px] text-center mb-[70px] md:mt-0 mt-[90px] font-semibold text-gray-700'>
           Tersedia banyak Kategori yang Sesuai dengan Minat mu!!
         </h2>
@@ -40,6 +41,27 @@ const LandingPage = () => {
               </a>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section id='cta' className='grid grid-cols-2'>
+        <div className='left'>
+          <img src={piala} alt='' />
+        </div>
+        <div className='right bg-red-500'>
+          <div className={`${Home.container.defaultContainer} ${Home.container.gap} `}>
+            <div className={`${Home.content} ${Home.container.width}`}>
+              <h1 className={`${Home.heading.defaultHeading} ${Home.heading.fontWeightBold} ${Home.heading.fontSize1}`}>
+                Segera Bergabung dan Menangkan Hadiahnya!
+              </h1>
+              <p className={Home.paragraph}>
+                Ikuti lomba-lomba menarik sesuai minat dan bakat Anda. Raih prestasi gemilang dalam passion Anda. Bergabunglah sekarang!.
+              </p>
+              <div className=''>
+                <Button children='Jelajahi' />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
