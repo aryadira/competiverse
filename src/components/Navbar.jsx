@@ -1,7 +1,7 @@
 import BoxContainer from "../layouts/BoxContainer";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Logo } from "../components";
-import { headerStyle, gradient } from "../style.js";
+import { headerStyle, gradient } from "../style.js";NavLink
 
 const Navbar = ({ pages, ...props }) => {
   return (
@@ -11,19 +11,19 @@ const Navbar = ({ pages, ...props }) => {
           <Logo className='text-xl ml-2' />
           <ul className={`md:${headerStyle.ul.layout} hidden`}>
             <li>
-              <Link to={pages.beranda} className={`${headerStyle.link.base} ${headerStyle.link.hoverText}`}>
+              <NavLink to={pages.beranda} className={`${headerStyle.link.base} ${headerStyle.link.hoverText}`}>
                 Beranda
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to={pages.lomba}
                 className={`${headerStyle.link.base} ${headerStyle.link.hoverText}`}
                 id='dropdownHoverButton'
                 data-dropdown-toggle='dropdownHover'
                 data-dropdown-trigger='hover'>
                 Lomba
-              </Link>
+              </NavLink>
               <div id='dropdownHover' className='z-40 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700'>
                 <ul className='py-2 text-sm text-gray-700 dark:text-gray-200' aria-labelledby='dropdownHoverButton'>
                   <li>
@@ -50,26 +50,26 @@ const Navbar = ({ pages, ...props }) => {
               </div>
             </li>
             <li>
-              <Link to={pages.jadwal} className={`${headerStyle.link.base} ${headerStyle.link.hoverText}`}>
+              <NavLink to={pages.jadwal} className={`${headerStyle.link.base} ${headerStyle.link.hoverText}`}>
                 Jadwal
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to={pages.riwayat} className={`${headerStyle.link.base} ${headerStyle.link.hoverText}`}>
+              <NavLink to={pages.riwayat} className={`${headerStyle.link.base} ${headerStyle.link.hoverText}`}>
                 Riwayat
-              </Link>
+              </NavLink>
             </li>
           </ul>
           <ul className={`${headerStyle.ul.bground} ${headerStyle.ul.layout} md:${headerStyle.ul.layout} hidden`}>
             <li>
-              <Link to={pages.login} className={`${headerStyle.link.base} hover:text-gray-300`}>
+              <NavLink to={pages.login} className={`${headerStyle.link.base} hover:text-gray-300`}>
                 Login
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to={pages.register} className={`${headerStyle.link.base} ${headerStyle.link.focus} ${headerStyle.link.hoverBg}`}>
+              <NavLink to={pages.register} className={`${headerStyle.link.base} ${headerStyle.link.focus} ${headerStyle.link.hoverBg}`}>
                 Register
-              </Link>
+              </NavLink>
             </li>
           </ul>
 
