@@ -47,11 +47,12 @@ export const categories = [
 export const recomends = [
   {
     id: 1,
-    tag: "Fotografi",
+    tag: "Visual",
     title: "Lomba Fotografi",
     date: "Mulai 01 Juli - 31 Juli",
     price: "Gratis",
     poster: cardImage1,
+    peserta: "20 Ribu",
   },
   {
     id: 2,
@@ -60,6 +61,7 @@ export const recomends = [
     date: "Mulai 01 Juli - 31 Juli",
     price: "Gratis",
     poster: cardImage2,
+    peserta: "20 Ribu",
   },
   {
     id: 3,
@@ -68,21 +70,24 @@ export const recomends = [
     date: "Mulai 01 Juli - 31 Juli",
     price: "Gratis",
     poster: cardImage3,
+    peserta: "20 Ribu",
   },
   {
     id: 4,
-    tag: "Fotografi",
+    tag: "Visual",
     title: "Lomba Fotografi",
     date: "Mulai 01 Juli - 31 Juli",
     price: "Gratis",
     poster: cardImage1,
+    peserta: "20 Ribu",
   },
   {
     id: 5,
-    tag: "Fotografi",
-    title: "Lomba Fotografi",
+    tag: "Teknologi",
+    title: "Lomba Website",
     date: "Mulai 01 Juli - 31 Juli",
     price: "Gratis",
     poster: cardImage1,
+    peserta: "20 Ribu",
   },
 ];
