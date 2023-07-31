@@ -20,7 +20,7 @@ const Home = {
     fontWeightExtrabold: "font-extrabold",
     fontSize1: "text-5xl md:text-5xl lg:text-4xl",
     fontSize2: "text-3xl",
-    width: "w-[350px]",
+    width: "w-[350px] sm:w-[200px]",
   },
   content: "flex flex-col justify-center",
   paragraph: "mb-8 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-300",
@@ -45,9 +45,9 @@ const Beranda = () => {
         </div>
       </section>
       <section id='recomendCard' className={Home.section.defaultSection}>
-        <div className={Home.container.defaultContainer}>
+        <div className={`${Home.container.defaultContainer} }`}>
           <h1
-            className={`${Home.heading.defaultHeading} ${Home.heading.fontWeightExtrabold} ${Home.heading.fontSize2} ${Home.baseColor} ${Home.heading.width}`}>
+            className={`${Home.heading.defaultHeading} ${Home.heading.fontWeightExtrabold} ${Home.heading.fontSize2} ${Home.baseColor} text-center sm:text-left`}>
             Rekomendasi Untuk Anda
           </h1>
         </div>
