@@ -52,6 +52,7 @@ export const recomends = [
     date: "Mulai 01 Juli - 31 Juli",
     price: "Gratis",
     poster: cardImage1,
+    peserta: "20 Ribu",
   },
   {
     id: 2,
@@ -60,6 +61,7 @@ export const recomends = [
     date: "Mulai 01 Juli - 31 Juli",
     price: "Gratis",
     poster: cardImage2,
+    peserta: "20 Ribu",
   },
   {
     id: 3,
@@ -68,6 +70,7 @@ export const recomends = [
     date: "Mulai 01 Juli - 31 Juli",
     price: "Gratis",
     poster: cardImage3,
+    peserta: "20 Ribu",
   },
   {
     id: 4,
@@ -76,6 +79,7 @@ export const recomends = [
     date: "Mulai 01 Juli - 31 Juli",
     price: "Gratis",
     poster: cardImage1,
+    peserta: "20 Ribu",
   },
   {
     id: 5,
@@ -84,5 +88,6 @@ export const recomends = [
     date: "Mulai 01 Juli - 31 Juli",
     price: "Gratis",
     poster: cardImage1,
+    peserta: "20 Ribu",
   },
 ];

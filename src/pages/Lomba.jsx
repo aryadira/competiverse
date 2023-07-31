@@ -38,26 +38,23 @@ const Lomba = () => {
               Ikuti lomba-lomba menarik sesuai minat dan bakat Anda. Raih prestasi gemilang dalam passion Anda. Bergabunglah sekarang!.
             </p>
             <div className=''>
-              <Button children='Temukan' />
+              <Button children='Jelajahi' />
             </div>
           </div>
         </div>
       </section>
       <div className='category-text flex flex-between w-full gap-[20px]'>
         {categories.map((category) => (
-          <div className={`${colorTextCategories.base} ${labelColor(category.nama)}`} key={category.id}>
+          <div
+            className={`${colorTextCategories.base} ${labelColor(category.nama)}`}
+            key={category.id}
+            onClick={() => (category.nama ? console.log(category.nama) : console.log("gada"))}>
             <PiStarFourFill />
             {category.nama}
           </div>
         ))}
       </div>
       <section id='recomendCard' className={Home.section.defaultSection}>
-        <div className={`${Home.container.defaultContainer} }`}>
-          <h1
-            className={`${Home.heading.defaultHeading} ${Home.heading.fontWeightExtrabold} ${Home.heading.fontSize2} ${Home.baseColor} text-center sm:text-left`}>
-            Rekomendasi Untuk Anda
-          </h1>
-        </div>
         <Card />
       </section>
       <section id='TrendingCard' className={Home.section.defaultSection}>
