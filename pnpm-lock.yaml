@@ -14,12 +14,18 @@ dependencies:
   framer-motion:
     specifier: ^10.15.0
     version: 10.15.0(react-dom@18.2.0)(react@18.2.0)
+  proptypes:
+    specifier: ^1.1.0
+    version: 1.1.0
   react:
     specifier: ^18.2.0
     version: 18.2.0
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
+  react-icons:
+    specifier: ^4.10.1
+    version: 4.10.1(react@18.2.0)
   react-router-dom:
     specifier: ^6.14.2
     version: 6.14.2(react-dom@18.2.0)(react@18.2.0)
@@ -2062,6 +2068,10 @@ packages:
       react-is: 16.13.1
     dev: true
 
+  /proptypes@1.1.0:
+    resolution: {integrity: sha512-589N0gHNvg6ocCDia1knxMwguEcZq1qyD8fVxFZEdZP0YKI+GTHyflsJH2mYE0YZbo1KNj5W8avdSR4iJDV+fw==}
+    dev: false
+
   /punycode@2.3.0:
     resolution: {integrity: sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==}
     engines: {node: '>=6'}
@@ -2079,6 +2089,14 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
+    dev: false
+
+  /react-icons@4.10.1(react@18.2.0):
+    resolution: {integrity: sha512-/ngzDP/77tlCfqthiiGNZeYFACw85fUjZtLbedmJ5DTlNDIwETxhwBzdOJ21zj4iJdvc0J3y7yOsX3PpxAJzrw==}
+    peerDependencies:
+      react: '*'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-is@16.13.1:

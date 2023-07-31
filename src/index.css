@@ -11,3 +11,6 @@
 body {
   overflow-x: hidden;
 }
+.active {
+  color: #6A5AE0;
+}
