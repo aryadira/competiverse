@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 
 const Card = () => {
   const labelCategories = {
-    fotografi: "text-xs py-[1px] px-2 bg-blue-100 border-[1px] text-blue-400 border-blue-300 inline-block rounded-full",
+    teknologi: "text-xs py-[1px] px-2 bg-blue-100 border-[1px] text-blue-400 border-blue-300 inline-block rounded-full",
     visual: "text-xs py-[1px] px-2 bg-purple-100 border-[1px] text-purple-400 border-purple-300 inline-block rounded-full",
     umum: "text-xs py-[1px] px-2 bg-green-100 border-[1px] text-green-400 border-green-300 inline-block rounded-full",
     gaming: "text-xs py-[1px] px-2 bg-pink-100 border-[1px] text-pink-400 border-pink-300 inline-block rounded-full",
   };
 
   function labelColor(category) {
-    if (category == "Fotografi") {
-      return labelCategories.fotografi;
+    if (category == "Teknologi") {
+      return labelCategories.teknologi;
     } else if (category == "Visual") {
       return labelCategories.visual;
     } else if (category == "Umum") {
@@ -26,7 +26,9 @@ const Card = () => {
     <div className='w-full h-auto grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 '>
       {recomends.map((recomend) => (
         // eslint-disable-next-line react/jsx-key
-        <Link to={recomend.link} className='bg-white rounded-2xl ml-3 mt-3 drop-shadow-sm relative hover:scale-105 transition-transform hover:drop-shadow-md'>
+        <Link
+          to={recomend.link}
+          className='bg-white rounded-2xl ml-3 mt-3 drop-shadow-sm relative hover:scale-105 transition-transform hover:drop-shadow-md'>
           <div className='h-[200px] rounded-t-2xl overflow-hidden object-cover;'>
             <img src={recomend.poster} className='object-cover w-full h-full object-top' />
           </div>
