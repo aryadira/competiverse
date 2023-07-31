@@ -46,13 +46,15 @@ export const categories = [
 
 export const recomends = [
   {
-    tag: "Fotografi",
+    id: 1,
+    tag: "Visual",
     title: "Lomba Fotografi",
     date: "Mulai 01 Juli - 31 Juli",
     price: "Gratis",
     poster: cardImage1,
   },
   {
+    id: 2,
     tag: "Visual",
     title: "Lomba Poster",
     date: "Mulai 01 Juli - 31 Juli",
@@ -60,6 +62,7 @@ export const recomends = [
     poster: cardImage2,
   },
   {
+    id: 3,
     tag: "Umum",
     title: "Lomba GCSO",
     date: "Mulai 01 Juli - 31 Juli",
@@ -67,15 +70,17 @@ export const recomends = [
     poster: cardImage3,
   },
   {
-    tag: "Fotografi",
+    id: 4,
+    tag: "Visual",
     title: "Lomba Fotografi",
     date: "Mulai 01 Juli - 31 Juli",
     price: "Gratis",
     poster: cardImage1,
   },
   {
-    tag: "Fotografi",
-    title: "Lomba Fotografi",
+    id: 5,
+    tag: "Teknologi",
+    title: "Lomba Website",
     date: "Mulai 01 Juli - 31 Juli",
     price: "Gratis",
     poster: cardImage1,

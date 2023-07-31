@@ -3,15 +3,15 @@ import { recomends } from "../constants";
 
 const Card = () => {
   const labelCategories = {
-    fotografi: "text-xs py-[1px] px-2 bg-blue-100 border-[1px] text-blue-400 border-blue-300 inline-block rounded-full",
+    teknologi: "text-xs py-[1px] px-2 bg-blue-100 border-[1px] text-blue-400 border-blue-300 inline-block rounded-full",
     visual: "text-xs py-[1px] px-2 bg-purple-100 border-[1px] text-purple-400 border-purple-300 inline-block rounded-full",
     umum: "text-xs py-[1px] px-2 bg-green-100 border-[1px] text-green-400 border-green-300 inline-block rounded-full",
     gaming: "text-xs py-[1px] px-2 bg-pink-100 border-[1px] text-pink-400 border-pink-300 inline-block rounded-full",
   };
 
   function labelColor(category) {
-    if (category == "Fotografi") {
-      return labelCategories.fotografi;
+    if (category == "Teknologi") {
+      return labelCategories.teknologi;
     } else if (category == "Visual") {
       return labelCategories.visual;
     } else if (category == "Umum") {
