@@ -96,7 +96,7 @@ const LandingPage = () => {
           </p>
           <div className=''>
             <Link to='/register'>
-              <Button children='Daftar Sekarang!' />
+              <Button children='Daftar Sekarang!' navHasLink={`/register`} />
             </Link>
           </div>
         </div>

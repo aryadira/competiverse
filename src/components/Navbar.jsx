@@ -1,16 +1,20 @@
 import BoxContainer from "../layouts/BoxContainer";
 import { NavLink } from "react-router-dom";
 import { Logo } from "../components";
-import { headerStyle, gradient } from "../style.js";NavLink
+import { headerStyle, gradient } from "../style.js";
 
 const Navbar = ({ pages, ...props }) => {
+  function refreshPage() {
+    window.location.reload(false);
+  }
+
   return (
     <header className={`${headerStyle.base} ${headerStyle.layout.between} top-0`}>
       <BoxContainer className='w-full'>
         <nav className={`${headerStyle.layout.between}`}>
           <Logo className='text-xl ml-2' />
           <ul className={`md:${headerStyle.ul.layout} hidden`}>
-            <li>
+            <li onClick={refreshPage}>
               <NavLink to={pages.beranda} className={`${headerStyle.link.base} ${headerStyle.link.hoverText}`}>
                 Beranda
               </NavLink>

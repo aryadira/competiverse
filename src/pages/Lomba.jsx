@@ -37,9 +37,6 @@ const Lomba = ({}) => {
             <p className={Home.paragraph}>
               Ikuti lomba-lomba menarik sesuai minat dan bakat Anda. Raih prestasi gemilang dalam passion Anda. Bergabunglah sekarang!.
             </p>
-            <div className=''>
-              <Button children='Jelajahi' />
-            </div>
           </div>
         </div>
       </section>
