@@ -1,6 +1,4 @@
-import { Beranda, LandingPage, Lomba, Register, Login } from "../pages";
 import { Navbar, Footer, Card } from "../components/";
-import { Link } from "react-router-dom";
 import BoxContainer from "./BoxContainer";
 import Routing from "../routes/Routing";
 
@@ -8,8 +6,7 @@ const Main = () => {
   const pages = {
     index: "/",
     beranda: "/beranda",
-    jadwal: "/jadwal",
-    lomba: "/lomba",
+    lomba: `/lomba`,
     jadwal: "/jadwal",
     riwayat: "/riwayat",
     login: "/login",

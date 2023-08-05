@@ -38,10 +38,10 @@ export const benefits = [
 ];
 
 export const categories = [
-  { id: "kategori-1", nama: "Teknologi", ilustrasi: teknologi, link: "/lomba/teknologi" },
-  { id: "kategori-2", nama: "Visual", ilustrasi: visual, link: "/lomba/visual" },
-  { id: "kategori-3", nama: "Umum", ilustrasi: umum, link: "/lomba/umum" },
-  { id: "kategori-4", nama: "Gaming", ilustrasi: gaming, link: "/lomba/gaming" },
+  { id: "kategori-1", nama: "Teknologi", ilustrasi: teknologi, link: "/teknologi" },
+  { id: "kategori-2", nama: "Visual", ilustrasi: visual, link: "/visual" },
+  { id: "kategori-3", nama: "Umum", ilustrasi: umum, link: "/umum" },
+  { id: "kategori-4", nama: "Gaming", ilustrasi: gaming, link: "/gaming" },
 ];
 
 export const recomends = [
@@ -89,5 +89,67 @@ export const recomends = [
     price: "Gratis",
     poster: cardImage1,
     peserta: "20 Ribu",
+  },
+];
+
+export const creatorPackages = [
+  {
+    id: 1,
+    level: "Standard Plan",
+    price: "Rp.200.000",
+    benefits: ["5 Lomba", "12 orang", "Pencarian Lomba Terbatas", "Notifikasi Lomba Terbatas", "Tidak ada Promosi Premium"],
+  },
+  {
+    id: 2,
+    level: "Pro Plan",
+    price: "Rp.500.000",
+    benefits: ["15 Lomba", "20 orang", "Pencarian Lomba Tanpa Batasan", "Notifikasi Lomba Tanpa Batasan", "Promosi Premium untuk 3 Lomba per Tahun"],
+  },
+  {
+    id: 3,
+    level: "Premium Plan",
+    price: "Rp.1.000.000",
+    benefits: [
+      "30 Lomba",
+      "Tidak terbatas",
+      "Pencarian Lomba Tanpa Batasan",
+      "Notifikasi Lomba Tanpa Batasan",
+      "Promosi Premium untuk 10 Lomba per Tahun",
+      "Akses Ke Analisis Data Pengguna",
+    ],
+  },
+  {
+    id: 4,
+    level: "Exclusive Plan",
+    price: "Rp.3.500.000",
+    benefits: [
+      "Tidak terbatas",
+      "Tidak terbatas",
+      "Pencarian Lomba Tanpa Batasan",
+      "Notifikasi Lomba Tanpa Batasan",
+      "Promosi Premium untuk semua Lomba per Tahun",
+      "Akses Ke Analisis Data Pengguna",
+    ],
+  },
+];
+
+export const faqs = [
+  {
+    id: "1",
+    question: "Apa sih itu Competiverse?",
+    answer:
+      "Competiverse adalah platform yang menyediakan beragam lomba menarik dari berbagai penyelenggara. Kemudahan dan efisiensinya membuat proses pencarian lomba menjadi jauh lebih praktis dan efektif",
+  },
+  {
+    id: "2",
+    question: "Bagaimana cara menjadi Creator Lomba di Competiverse?",
+    answer:
+      "Dengan memilih paket creator, Anda dapat langsung saja berlangganan dengan paket creator yang sudah tersedia, maka kami akan menjadikan Anda sebagai Creator Lomba di Competiverse",
+  },
+  {
+    id: "3",
+    question: "Apakah banyak pilihan Lomba di Competiverse?",
+    answer:
+      "Competiverse menyediakan banyak sekali pilihan lomba sesuai dengan kategorinya. Tentunya kategori yang mencakup semua perlombaan pada masa kini",
   },
 ];

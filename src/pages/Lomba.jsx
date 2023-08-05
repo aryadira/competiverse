@@ -5,7 +5,7 @@ import { PiStarFourFill } from "react-icons/pi";
 import { categories } from "../constants";
 import { useState } from "react";
 
-const Lomba = () => {
+const Lomba = ({}) => {
   const colorTextCategories = {
     base: "category text-[32px] font-bold flex items-center cursor-pointer hover:scale-105",
     teknologi: "text-blue-500",
@@ -50,7 +50,7 @@ const Lomba = () => {
             key={category.id}
             onClick={() => (category.nama ? console.log(category.nama) : console.log("gada"))}>
             <PiStarFourFill />
-            {category.nama}
+            <a href={`${category.link}`}>{category.nama}</a>
           </div>
         ))}
       </div>
