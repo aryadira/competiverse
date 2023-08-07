@@ -28,7 +28,7 @@ const Lomba = ({}) => {
 
   return (
     <>
-      <section id='berandaHeader' className={`${Home.section.defaultSection}`}>
+      <section id='all' className={`${Home.section.defaultSection}`}>
         <div className={`${Home.container.defaultContainer} ${Home.container.gap} `}>
           <div className={`${Home.content} ${Home.container.width}`}>
             <h1 className={`${Home.heading.defaultHeading} ${Home.heading.fontWeightBold} ${Home.heading.fontSize1}`}>

@@ -3,7 +3,7 @@ import { Card } from "../components";
 import { gradient, headerStyle, Home } from "../style";
 import { FiSearch } from "react-icons/fi";
 
-const Beranda = () => {
+const Beranda = (props) => {
   return (
     <>
       <section id='berandaHeader' className={`${Home.section.defaultSection} ${Home.section.justify}`}>
