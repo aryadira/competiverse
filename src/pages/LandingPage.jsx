@@ -56,13 +56,14 @@ const LandingPage = () => {
               key={creatorPackage.id}>
               <h5 className='mb-4 text-xl font-medium text-gray-500 dark:text-gray-400'>{creatorPackage.level}</h5>
               <div className='flex items-baseline text-gray-900 dark:text-white'>
-                <span className='text-3xl font-semibold'></span>
-                <span className='text-3xl font-semibold tracking-tight'>{creatorPackage.price}</span>
-                <span className='ml-1 text-xl font-normal text-gray-500 dark:text-gray-400'>/tahun</span>
+                <span className='text-3xl font-semibold tracking-tight flex flex-wrap'>
+                  {creatorPackage.price}
+                  <span className='ml-1 text-xl font-normal text-gray-500 dark:text-gray-400'>/tahun</span>
+                </span>
               </div>
-              <ul role='list' className='min-h-[250px] space-y-5 my-7'>
+              <ul role='list' className='min-h-[280px] space-y-5 my-7'>
                 {creatorPackage.benefits.map((benefit) => (
-                  <li className='flex space-x-3 items-center' key={creatorPackage.id}>
+                  <li className='flex space-x-3 items-center' key={benefit.id}>
                     <svg
                       className='flex-shrink-0 w-4 h-4 text-blue-600 dark:text-blue-500'
                       aria-hidden='true'
