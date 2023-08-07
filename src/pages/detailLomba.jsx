@@ -1,12 +1,17 @@
-import React from 'react'
-import Routing from '../routes/Routing'
+import { useParams } from "react-router-dom";
+import { categories } from "../constants";
+import { useState } from "react";
 
-const detailLomba = () => {
-  return (
-    <>
-    <h1 className='bg-blue-500'>test</h1>
-    </>
-  )
-}
+const DetailLomba = () => {
+  const { id } = useParams();
+  const [detail, setDetail] = useState([]);
+  console.log(id);
 
-export default detailLomba
+  categories.map((category) => {
+    setDetail(category);
+  });
+
+  return <div>{detail}</div>;
+};
+
+export default DetailLomba;

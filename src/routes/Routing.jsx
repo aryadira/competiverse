@@ -1,8 +1,6 @@
-import React from "react";
-import Main from "../layouts/Main";
 import { Routes, Route } from "react-router-dom";
-import { Beranda, LandingPage, Lomba, Jadwal, Riwayat, Login, Register } from "../pages";
-import BoxContainer from "../layouts/BoxContainer";
+import { Beranda, LandingPage, Lomba, Jadwal, Riwayat, Login, Register, DetailLomba } from "../pages";
+import { categories } from "../constants";
 
 const Routing = ({ pages, ...props }) => {
   return (
@@ -10,6 +8,7 @@ const Routing = ({ pages, ...props }) => {
       <Route path={pages.index} exact element={<LandingPage />} />
       <Route path={pages.beranda} element={<Beranda />} />
       <Route path={pages.lomba} element={<Lomba />} />
+      <Route path='/lomba/:id' element={<DetailLomba />} />;
       <Route path={pages.jadwal} element={<Jadwal />} />
       <Route path={pages.riwayat} element={<Riwayat />} />
       <Route path={pages.login} element={<Login />} />
