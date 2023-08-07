@@ -3,15 +3,9 @@ import { categories } from "../constants";
 import { useState } from "react";
 
 const DetailLomba = () => {
-  const { id } = useParams();
-  const [detail, setDetail] = useState([]);
-  console.log(id);
+  const { kategori } = useParams();
 
-  categories.map((category) => {
-    setDetail(category);
-  });
-
-  return <div>{detail}</div>;
+  return <div>DetailLomba {kategori}</div>;
 };
 
 export default DetailLomba;

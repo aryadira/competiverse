@@ -60,7 +60,7 @@ const LandingPage = () => {
                 <span className='text-3xl font-semibold tracking-tight'>{creatorPackage.price}</span>
                 <span className='ml-1 text-xl font-normal text-gray-500 dark:text-gray-400'>/tahun</span>
               </div>
-              <ul role='list' className='h-[250px] space-y-5 my-7'>
+              <ul role='list' className='min-h-[250px] space-y-5 my-7'>
                 {creatorPackage.benefits.map((benefit) => (
                   <li className='flex space-x-3 items-center' key={creatorPackage.id}>
                     <svg

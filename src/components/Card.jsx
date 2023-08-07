@@ -1,5 +1,5 @@
 import React from "react";
-import { recomends } from "../constants";
+import { categories, recomends } from "../constants";
 import { Link } from "react-router-dom";
 
 const Card = () => {
@@ -26,9 +26,7 @@ const Card = () => {
     <div className='w-full h-auto grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 '>
       {recomends.map((recomend) => (
         // eslint-disable-next-line react/jsx-key
-        <Link
-          to={recomend.link}
-          className='bg-white rounded-2xl ml-3 mt-3 drop-shadow-sm relative hover:scale-105 transition-transform hover:drop-shadow-md'>
+        <div onClick='' className='bg-white rounded-2xl ml-3 mt-3 drop-shadow-sm relative hover:scale-105 transition-transform hover:drop-shadow-md'>
           <div className='h-[200px] rounded-t-2xl overflow-hidden object-cover;'>
             <img src={recomend.poster} className='object-cover w-full h-full object-top' />
           </div>
@@ -43,7 +41,7 @@ const Card = () => {
               <h3 className='text-[#777] text-xs flex items-center'>20Rb+ Peserta</h3>
             </div>
           </div>
-        </Link>
+        </div>
       ))}
     </div>
   );

@@ -8,7 +8,7 @@ const Routing = ({ pages, ...props }) => {
       <Route path={pages.index} exact element={<LandingPage />} />
       <Route path={pages.beranda} element={<Beranda />} />
       <Route path={pages.lomba} element={<Lomba />} />
-      <Route path='/lomba/:id' element={<DetailLomba />} />;
+      <Route path={`${pages.lomba}/:kategori`} element={<DetailLomba />} />
       <Route path={pages.jadwal} element={<Jadwal />} />
       <Route path={pages.riwayat} element={<Riwayat />} />
       <Route path={pages.login} element={<Login />} />
