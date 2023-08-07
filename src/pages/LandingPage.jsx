@@ -414,7 +414,7 @@ const LandingPage = () => {
             Segera Bergabung dan <br />
             Menangkan Hadiahnya!
           </h1>
-          <p className={`${Home.paragraph} text-gray-100 text-base`}>
+          <p className={`${Home.paragraph} text-white text-base`}>
             Apakah kamu gemar berkompetisi dan mencari tantangan baru? Temukan beragam info lomba menarik dan seru di website kami! Mulai dari lomba
             visual, gaming, teknologi, umum dan banyak lagi.
           </p>

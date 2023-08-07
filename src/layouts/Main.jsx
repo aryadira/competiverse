@@ -10,7 +10,6 @@ const Main = () => {
     beranda: "/beranda",
     jadwal: "/jadwal",
     lomba: "/lomba",
-    jadwal: "/jadwal",
     riwayat: "/riwayat",
     login: "/login",
     register: "/register",

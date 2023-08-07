@@ -4,6 +4,7 @@ import { Logo } from "../components";
 import { headerStyle, gradient } from "../style.js";NavLink
 
 const Navbar = ({ pages, ...props }) => {
+
   return (
     <header className={`${headerStyle.base} ${headerStyle.layout.between} top-0`}>
       <BoxContainer className='w-full'>
