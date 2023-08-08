@@ -1,8 +1,8 @@
 import { Jumbotron, Button } from "../components";
 import { benefits, categories, creatorPackages, faqs } from "../constants";
-import { headerStyle, gradient, Home } from "../style";
-import piala from "../assets/images/piala.svg";
+import { gradient, Home } from "../style";
 import { Link } from "react-router-dom";
+import piala from "../assets/images/piala.svg";
 
 const LandingPage = () => {
   return (

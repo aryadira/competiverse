@@ -1,7 +1,7 @@
 import BoxContainer from "../layouts/BoxContainer";
 import { NavLink } from "react-router-dom";
 import { Logo } from "../components";
-import { headerStyle, gradient } from "../style.js";
+import { headerStyle } from "../style.js";
 
 const Navbar = ({ pages, ...props }) => {
   function refreshPage() {
