@@ -10,6 +10,13 @@ import visual from "../assets/images/visual.svg";
 import umum from "../assets/images/umum.svg";
 import gaming from "../assets/images/gaming.svg";
 
+// competitions
+import businescase from "../assets/images/competition/businescase.jpg";
+import dbklik from "../assets/images/competition/dbklik.jpg";
+import esaiilmiah from "../assets/images/competition/esaiilmiah.jpg";
+import postervideo from "../assets/images/competition/postervideo.jpg";
+import uiux from "../assets/images/competition/uiux.jpg";
+
 export const benefits = [
   {
     id: "benefit-1",
@@ -37,6 +44,128 @@ export const benefits = [
   },
 ];
 
+export const competitions = [
+  {
+    id: 1,
+    title: "Poster & Video Competition 2023",
+    category: "visual",
+    regisdate: "27 Juli - 26 Agustus 2023",
+    timeline: ["Pendaftaran & submission karya : 27 Juli - 26 Agustus 2023"],
+    price: "Gratis",
+    link: "https://bit.ly/IE_Competition2023",
+    requirement: [
+      "Peserta adalah Siswa SMA/SMK/MAN/ Alumni* (lulusan SMA tahun 2023)",
+      "Peserta merupakan perorangan / kelompok (maks 3 orang)",
+      "Seluruh peserta wajib follow Instagram @ ie.binus.Semarang (Karya yang tidak follow akun tidak dapat mengikuti tahapan penjurian)",
+      "Timeline pengumpulan karya wajib diikuti semua peserta dan tidak ada perpanjangan",
+    ],
+    source: "@ie.binus.semarang",
+    poster: postervideo,
+    guidebook: "bit.ly/GuideBookIE_Competition",
+  },
+  {
+    id: 2,
+    title: "Business Case Competition",
+    category: "teknologi",
+    regisdate: "30 Juli - 3 September 2023",
+    timeline: [
+      "30 Juli - 3 September 2023",
+      "Preliminary Stage : 4 September - 10 September 2023",
+      "Pengumuman Lolos ke Babak Semifinal : 17 September 2023",
+      "Semifinal Stage : 18 September - 1 Oktober 2023",
+      "Pengumuman Lolos ke Babak Final 15 besar : 15 Oktober 2023",
+      "Technical Meeting : 29 Oktober 2023",
+      "Final & Pengumuman Juara : 10 - 12 November 2023",
+    ],
+    price: "Gratis",
+    link: "https://intip.in/RegisMBCC2023/",
+    requirement: [
+      "Peserta merupakan siswa SMA sederajat aktif yang dibuktikan dengan melampirkan Kartu Pelajar saat pendaftaran.",
+      "Peserta merupakan perorangan / kelompok (maks 3 orang)Peserta merupakan tim yang terdiri dari maksimal 2 peserta dengan asal sekolah yang sama.",
+      "Setiap sekolah dapat mengirimkan perwakilan lebih dari 1 tim.",
+      "Peserta yang masuk ke babak final wajib mengisi deklarasi yang menyatakan bahwa bersedia mengikuti rangkaian kegiatan Manifest Business Case Competition 2023.",
+      "Peserta wajib mengirimkan karya asli yang belum pernah dipublikasikan dan belum pernah menjadi juara pada lomba sebelumnya dan juga tidak sedang diikutkan dalam lomba lain.",
+      "Segala bentuk kecurangan dan plagiarisme akan dikenakan sanksi berupa pengurangan nilai, diskualifikasi serta pembatalan status sebagai peserta.",
+    ],
+    source: "@its_manifest",
+    poster: businescase,
+    guidebook: "intip.in/GuidanceBookMBCC2023",
+  },
+  {
+    id: 3,
+    title: "UI/UX DESIGN COMPETITION SMART IT FEST 2023",
+    category: "teknologi",
+    regisdate: "8 - 22 Agustus 2023",
+    timeline: [
+      "Pendaftaran : 8-22 Agustus 2023",
+      "Batas pengumpulan karya : 23 Agustus 2023",
+      "Pengumuman hasil penyisihan : 17 September 2023",
+      "Technical meeting final : 20 September 2023",
+      "Presentasi final & pengumuman juara : 1 Oktober 2023",
+    ],
+    price: "Rp. 30.000",
+    link: ["https://uns.id/PrototypeVideoUIUXSIF23", "https://uns.id/PengumpulanKaryaSIF2023"],
+    requirement: [
+      "Tiap peserta hanya boleh mengambil satu platform yang akan dijadikan sebagai studi kasus. Bisa platform web atau mobile.",
+      "Peserta harus mengumpulkan studi kasus dalam bentuk .pdf, dengan format “DESAIN UI/UX SIF2023_<Nama Tim>”.pdf pada link : https://uns.id/PengumpulanKaryaSIF2023",
+      "Peserta harus mencantumkan link file prototype UI yang bisa diklik (menggunakan figma)",
+      "Peserta harus membuat dan mengumpulkan video penjelasan prototype karya, video dikumpulkan pada link : https://uns.id/PrototypeVideoUIUXSIF23",
+      "Hasil karya harus bersifat original atau merupakan pengembangan dari system/produk yang sudah ada.",
+      "Karya yang dilombakan belum pernah diikutsertakan dalam kompetisi sejenis, dan belum pernah dipublikasikan dalam bentuk apapun.",
+      "Karya tidak boleh mengandung unsur pornografi, SARA, sadisme atau hal-hal yang bersifat merendahkan atau melecehkan pihak lain.",
+    ],
+    source: "@smartitfestofficial",
+    poster: uiux,
+    guidebook: "uns.id/guidebookuiuxsif23",
+  },
+  {
+    id: 4,
+    title: "TRACIVAL LOMBA ESAI ILMIAH",
+    category: "umum",
+    regisdate: "1 - 16 Agustus 2023",
+    timeline: [
+      "Pendaftaran Gelombang 2 : 1 - 16 Agustus 2023",
+      "Pengumpulan : 1 - 18 Agustus 2023",
+      "Penjurian : 19 - 26 Agustus 2023",
+      "Pengumuman Finalis : 28 Agustus 2023",
+      "Technical Meeting : 31 Agustus 2023",
+      "Presentasi esai ilmiah : 2 September 2023",
+      "Pengumuman lomba & seminar nasional : 3 September 2023",
+    ],
+    price: "Gratis",
+    link: ["bit.ly/RegistrasiTRACIVAL2023"],
+    requirement: [
+      "Peserta merupakan individu atau tim (maksimal 3 orang)",
+      "Peserta merupakan Mahasiswa Aktif, dibuktikan dengan melampirkan KTM (Kartu Tanda Mahasiswa)",
+      "Peserta wajib mengisi formulir pendaftran",
+      "Naskah esai dibuat sesuai dengan tema dan sub tema dari pilihan yang ada",
+      "Masing-masing tim hanya bisa mengirimkan 1 naskah esai",
+    ],
+    source: "@tracival_untirta",
+    poster: esaiilmiah,
+    guidebook: "bit.ly/GuideTRACIVAL2023",
+  },
+  {
+    id: 5,
+    title: "Tournament DB Klik Mobile Legend",
+    category: "gaming",
+    regisdate: "4 - 17 Agustus 2023 ",
+    timeline: ["Pendaftaran : 4 - 17 Agusutus 2023 ", "Match day : 21 - 31 Agustus 2023"],
+    price: "Gratis",
+    link: ["https://linktr.ee/dbkliksby"],
+    requirement: [
+      "Satu tim terdiri dari 5 pemain, 1 pemain pengganti (cadangan)",
+      "Pemain yang mendaftar minimal SMA Sederajat",
+      "Setiap pemain tidak diizinkan menggunakan skin saat permainan berlangsung",
+      "Seorang/pemain hanya dapat berpartisipasi dalam 1 tim",
+      "Pemain yang ditemukan tidak mengikuti aturan resmi dapat diberhentikan dari turnamen",
+    ],
+    source: "@dbklik.id",
+    poster: dbklik,
+    guidebook: "tidak ada guidebook",
+  },
+];
+
 export const categories = [
   { id: "kategori-1", nama: "Teknologi", ilustrasi: teknologi, link: "/teknologi" },
   { id: "kategori-2", nama: "Visual", ilustrasi: visual, link: "/visual" },
@@ -47,6 +176,7 @@ export const categories = [
 export const recomends = [
   {
     id: 1,
+    category: "visual",
     tag: "Visual",
     title: "Lomba Fotografi",
     date: "Mulai 01 Juli - 31 Juli",
@@ -56,6 +186,7 @@ export const recomends = [
   },
   {
     id: 2,
+    category: "visual",
     tag: "Visual",
     title: "Lomba Poster",
     date: "Mulai 01 Juli - 31 Juli",
@@ -65,6 +196,7 @@ export const recomends = [
   },
   {
     id: 3,
+    category: "umum",
     tag: "Umum",
     title: "Lomba GCSO",
     date: "Mulai 01 Juli - 31 Juli",
@@ -74,6 +206,7 @@ export const recomends = [
   },
   {
     id: 4,
+    category: "visual",
     tag: "Visual",
     title: "Lomba Fotografi",
     date: "Mulai 01 Juli - 31 Juli",
@@ -83,6 +216,7 @@ export const recomends = [
   },
   {
     id: 5,
+    category: "teknologi",
     tag: "Teknologi",
     title: "Lomba Website",
     date: "Mulai 01 Juli - 31 Juli",

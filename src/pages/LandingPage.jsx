@@ -35,8 +35,8 @@ const LandingPage = () => {
           {categories.map((category) => (
             <div key={category.id} className={`${gradient.purpleToPink} relative p-2 rounded-3xl transition duration-150 ease-out`}>
               <a
-                href={category.link}
-                className={`hover:text-white card-kategori text-center  flex flex-col items-center justify-between rounded-3xl p-5 w-full h-full bg-white relative outline-${gradient.purpleToPink} hover:scale-110 transition duration-150`}>
+                href={`/lomba${category.link}`}
+                className={`hover:text-white card-kategori text-center flex flex-col items-center justify-between rounded-3xl p-5 w-full h-full bg-white relative outline-${gradient.purpleToPink} hover:scale-110 hover:shadow-lg transition duration-150`}>
                 <img className='h-[200px] max-w-full rounded-lg object-contain' src={category.ilustrasi} alt={category.nama} />
                 <h3 className={`text-2xl mt-8 ${gradient.textGradient} text-transparent`}>{category.nama}</h3>
               </a>
