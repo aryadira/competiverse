@@ -1,5 +1,5 @@
 import React from "react";
-import { categories, recomends } from "../constants";
+import { categories, competitions } from "../constants";
 import { Link } from "react-router-dom";
 
 const Card = () => {
@@ -11,37 +11,38 @@ const Card = () => {
   };
 
   function labelColor(category) {
-    if (category == "Teknologi") {
+    if (category == "teknologi") {
       return labelCategories.teknologi;
-    } else if (category == "Visual") {
+    } else if (category == "visual") {
       return labelCategories.visual;
-    } else if (category == "Umum") {
+    } else if (category == "umum") {
       return labelCategories.umum;
-    } else if (category == "Gaming") {
+    } else if (category == "gaming") {
       return labelCategories.gaming;
     }
   }
 
   return (
     <div className='w-full h-auto grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 '>
-      {recomends.map((recomend) => (
+      {competitions.map((competition) => (
         // eslint-disable-next-line react/jsx-key
-        <div onClick='' className='bg-white rounded-2xl ml-3 mt-3 drop-shadow-sm relative hover:scale-105 transition-transform hover:drop-shadow-md'>
+        <a
+          href={`/lomba/${competition.category}/${competition.id}`}
+          className='bg-white rounded-2xl ml-3 mt-3 drop-shadow-sm relative hover:scale-105 transition-transform hover:drop-shadow-md'>
           <div className='h-[200px] rounded-t-2xl overflow-hidden object-cover;'>
-            <img src={recomend.poster} className='object-cover w-full h-full object-top' />
+            <img loading='lazy' src={competition.poster} className='object-cover w-full h-full object-top' />
           </div>
           <div className='mt-[8px] mx-[15px] mb-[17px] gap-y-10 '>
             <div className=''>
-              <p className={labelColor(recomend.tag)}>{recomend.tag}</p>
-              <h3 className='mt-[3px] font-[900] text-xl text-[#444444] truncate block'>{recomend.title}</h3>
-              <p className='mb-5 text-gray-400 text-sm'>{recomend.date}</p>
+              <p className={labelColor(competition.category)}>{competition.category}</p>
+              <h3 className='mt-[3px] font-[900] text-xl text-[#444444] truncate block'>{competition.title}</h3>
+              <p className='mb-5 text-gray-400 text-sm'>{competition.regisdate}</p>
             </div>
             <div className='flex w-full justify-between items-end '>
-              <h3 className='text-[#6C63FF] font-bold text-2xl'>{recomend.price}</h3>
-              <h3 className='text-[#777] text-xs flex items-center'>20Rb+ Peserta</h3>
+              <h3 className='text-[#6C63FF] font-bold text-2xl'>{competition.price}</h3>
             </div>
           </div>
-        </div>
+        </a>
       ))}
     </div>
   );
