@@ -14,6 +14,11 @@ html {
 body {
   overflow-x: hidden;
 }
+
 .active {
-  color: #6A5AE0;
+  color: #6a5ae0;
+}
+
+ol {
+  list-style-type: decimal;
 }

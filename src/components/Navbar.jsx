@@ -28,31 +28,7 @@ const Navbar = ({ pages, ...props }) => {
                 data-dropdown-trigger='hover'>
                 Lomba
               </NavLink>
-              <div id='dropdownHover' className='z-40 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700'>
-                <ul className='py-2 text-sm text-gray-700 dark:text-gray-200' aria-labelledby='dropdownHoverButton'>
-                  <li>
-                    <a href='/lomba/teknologi' className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'>
-                      Teknologi
-                    </a>
-                  </li>
-                  <li>
-                    <a href='/lomba/visual' className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'>
-                      Visual
-                    </a>
-                  </li>
-                  <li>
-                    <a href='/lomba/umum' className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'>
-                      Umum
-                    </a>
-                  </li>
-                  <li>
-                    <a href='/lomba/gaming' className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'>
-                      Gaming
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
+              </li>
             <li>
               <NavLink to={pages.jadwal} className={`${headerStyle.link.base} ${headerStyle.link.hoverText}`}>
                 Jadwal

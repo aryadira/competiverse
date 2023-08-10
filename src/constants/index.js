@@ -53,7 +53,7 @@ export const competitions = [
     timeline: ["Pendaftaran & submission karya : 27 Juli - 26 Agustus 2023"],
     price: "Gratis",
     link: "https://bit.ly/IE_Competition2023",
-    requirement: [
+    requirements: [
       "Peserta adalah Siswa SMA/SMK/MAN/ Alumni* (lulusan SMA tahun 2023)",
       "Peserta merupakan perorangan / kelompok (maks 3 orang)",
       "Seluruh peserta wajib follow Instagram @ ie.binus.Semarang (Karya yang tidak follow akun tidak dapat mengikuti tahapan penjurian)",
@@ -79,7 +79,7 @@ export const competitions = [
     ],
     price: "Gratis",
     link: "https://intip.in/RegisMBCC2023/",
-    requirement: [
+    requirements: [
       "Peserta merupakan siswa SMA sederajat aktif yang dibuktikan dengan melampirkan Kartu Pelajar saat pendaftaran.",
       "Peserta merupakan perorangan / kelompok (maks 3 orang)Peserta merupakan tim yang terdiri dari maksimal 2 peserta dengan asal sekolah yang sama.",
       "Setiap sekolah dapat mengirimkan perwakilan lebih dari 1 tim.",
@@ -105,7 +105,7 @@ export const competitions = [
     ],
     price: "Rp. 30.000",
     link: ["https://uns.id/PrototypeVideoUIUXSIF23", "https://uns.id/PengumpulanKaryaSIF2023"],
-    requirement: [
+    requirements: [
       "Tiap peserta hanya boleh mengambil satu platform yang akan dijadikan sebagai studi kasus. Bisa platform web atau mobile.",
       "Peserta harus mengumpulkan studi kasus dalam bentuk .pdf, dengan format “DESAIN UI/UX SIF2023_<Nama Tim>”.pdf pada link : https://uns.id/PengumpulanKaryaSIF2023",
       "Peserta harus mencantumkan link file prototype UI yang bisa diklik (menggunakan figma)",
@@ -134,7 +134,7 @@ export const competitions = [
     ],
     price: "Gratis",
     link: ["bit.ly/RegistrasiTRACIVAL2023"],
-    requirement: [
+    requirements: [
       "Peserta merupakan individu atau tim (maksimal 3 orang)",
       "Peserta merupakan Mahasiswa Aktif, dibuktikan dengan melampirkan KTM (Kartu Tanda Mahasiswa)",
       "Peserta wajib mengisi formulir pendaftran",
@@ -153,7 +153,7 @@ export const competitions = [
     timeline: ["Pendaftaran : 4 - 17 Agusutus 2023 ", "Match day : 21 - 31 Agustus 2023"],
     price: "Gratis",
     link: ["https://linktr.ee/dbkliksby"],
-    requirement: [
+    requirements: [
       "Satu tim terdiri dari 5 pemain, 1 pemain pengganti (cadangan)",
       "Pemain yang mendaftar minimal SMA Sederajat",
       "Setiap pemain tidak diizinkan menggunakan skin saat permainan berlangsung",

@@ -1,13 +1,11 @@
-import { Button } from "../components";
 import { Card } from "../components";
-import { gradient, headerStyle, Home } from "../style";
+import { gradient, Home } from "../style";
 import { PiStarFourFill } from "react-icons/pi";
-import { categories } from "../constants";
-import { useState } from "react";
+import { categories, competitions } from "../constants";
 
 const Lomba = () => {
   const colorTextCategories = {
-    base: "category text-[32px] font-bold flex items-center cursor-pointer hover:scale-105",
+    base: "category text-[32px] font-bold flex items-center cursor-pointer",
     teknologi: "text-blue-500",
     visual: "text-purple-500",
     umum: "text-green-500",
@@ -44,20 +42,11 @@ const Lomba = () => {
         {categories.map((category) => (
           <div className={`${colorTextCategories.base} ${labelColor(category.nama)}`} key={category.id}>
             <PiStarFourFill />
-            <a href={`/lomba${category.link}`}>{category.nama}</a>
+            <h1>{category.nama}</h1>
           </div>
         ))}
       </div>
       <section id='recomendCard' className={Home.section.defaultSection}>
-        <Card />
-      </section>
-      <section id='TrendingCard' className={Home.section.defaultSection}>
-        <div className={Home.container.defaultContainer}>
-          <h1
-            className={`${Home.heading.defaultHeading} ${Home.heading.fontWeightExtrabold} ${Home.heading.fontSize2} ${Home.baseColor} ${Home.heading.width}`}>
-            Trending
-          </h1>
-        </div>
         <Card />
       </section>
     </>
