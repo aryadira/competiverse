@@ -56,6 +56,8 @@ const Beranda = (props) => {
           </div>
         </div>
       </section>
+
+      {/* Recomended Card */}
       <section id='recomendCard' className={Home.section.defaultSection}>
         <div className={`${Home.container.defaultContainer} }`}>
           <h1
@@ -65,6 +67,8 @@ const Beranda = (props) => {
         </div>
         <Card />
       </section>
+
+      {/* Trending Card */}
       <section id='TrendingCard' className={Home.section.defaultSection}>
         <div className={Home.container.defaultContainer}>
           <h1

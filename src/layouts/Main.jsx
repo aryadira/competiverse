@@ -6,8 +6,8 @@ const Main = () => {
   const pages = {
     index: "/",
     beranda: "/beranda",
-    lomba: `/lomba`,
     jadwal: "/jadwal",
+    lomba: "/lomba",
     riwayat: "/riwayat",
     login: "/login",
     register: "/register",

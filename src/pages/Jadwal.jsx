@@ -5,9 +5,9 @@ const Jadwal = () => {
     <>
       {" "}
       <div className='container mx-auto mt-10'>
-        <div className='wrapper bg-white rounded shadow w-full '>
+        <div className='wrapper bg-white rounded shadow w-full'>
           <div className='header flex justify-between border-b p-2'>
-            <span className='text-lg font-bold'>2020 July</span>
+            <span className='text-lg font-bold'>2023 July</span>
             <div className='buttons'>
               <button className='p-1'>
                 <svg
