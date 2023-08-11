@@ -112,7 +112,7 @@ const Riwayat = (props) => {
                 role='tab'
                 aria-controls='dashboard'
                 aria-selected='false'>
-                Riwayat Pendafataran
+                Riwayat Pendaftaran
               </button>
             </li>
           </ul>
@@ -124,7 +124,7 @@ const Riwayat = (props) => {
                 <img src={competition.poster} alt='' srcset='' className='w-[40vh] object-cover object-top rounded-md' />
                 <div className='mx-[20px] my-[10px] w-[100vh] relative'>
                   <h1 className=''>
-                    <a href='' className='font-extrabold text-[30px] text-[#444444] hover:text-[#6a5ae0]'>
+                    <a href={`/lomba/${competition.category}/${competition.id}`} className='font-extrabold text-[30px] text-[#444444] hover:text-[#6a5ae0]'>
                       {competition.title}
                     </a>
                   </h1>
@@ -136,7 +136,7 @@ const Riwayat = (props) => {
                   <h3 className='absolute bottom-0 text-blue-500 text-xl font-bold'>{competition.price}</h3>
                 </div>
                 <div className='absolute bottom-0 right-0'>
-                  <Button href='' children='Daftar' className='rounded-bl-none rounded-tr-none' />
+                  <Button href={`/lomba/${competition.category}/${competition.id}`} children='Daftar' className='rounded-bl-none rounded-tr-none' />
                 </div>
               </div>
             ))}
@@ -147,7 +147,7 @@ const Riwayat = (props) => {
                 <img src={competition.poster} alt='' srcset='' className='w-[40vh] object-cover object-top rounded-md' />
                 <div className='mx-[20px] my-[10px] w-[100vh] relative'>
                   <h1 className=''>
-                    <a href='' className='font-extrabold text-[30px] text-[#444444] hover:text-[#6a5ae0]'>
+                    <a href={`/lomba/${competition.category}/${competition.id}`} className='font-extrabold text-[30px] text-[#444444] hover:text-[#6a5ae0]'>
                       {competition.title}
                     </a>
                   </h1>
@@ -157,7 +157,7 @@ const Riwayat = (props) => {
                       competition.category
                     )}`}>{`${competition.category.charAt(0).toUpperCase()}${competition.category.slice(1)}`}</p>
                   <div className='absolute bottom-0'>
-                    <Button href='' children='Review' className='' />
+                    <Button href={`/lomba/${competition.category}/${competition.id}`} children='Review' className='' />
                   </div>
                 </div>
               </div>
