@@ -50,7 +50,7 @@ export const competitions = [
     title: "Poster & Video Competition 2023",
     category: "visual",
     regisdate: "27 Juli - 26 Agustus 2023",
-    timeline: ["Pendaftaran & submission karya : 27 Juli - 26 Agustus 2023"],
+    timelines: ["Pendaftaran & submission karya : 27 Juli - 26 Agustus 2023"],
     price: "Gratis",
     link: "https://bit.ly/IE_Competition2023",
     requirements: [
@@ -59,16 +59,17 @@ export const competitions = [
       "Seluruh peserta wajib follow Instagram @ ie.binus.Semarang (Karya yang tidak follow akun tidak dapat mengikuti tahapan penjurian)",
       "Timeline pengumpulan karya wajib diikuti semua peserta dan tidak ada perpanjangan",
     ],
-    source: "@ie.binus.semarang",
+    account: "@ie.binus.semarang",
     poster: postervideo,
-    guidebook: "bit.ly/GuideBookIE_Competition",
+    guidebook: "https://bit.ly/GuideBookIE_Competition",
+    source: "https://www.instagram.com/p/Cvi4zsfBE8z/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
   },
   {
     id: 2,
     title: "Business Case Competition",
     category: "teknologi",
     regisdate: "30 Juli - 3 September 2023",
-    timeline: [
+    timelines: [
       "30 Juli - 3 September 2023",
       "Preliminary Stage : 4 September - 10 September 2023",
       "Pengumuman Lolos ke Babak Semifinal : 17 September 2023",
@@ -87,16 +88,17 @@ export const competitions = [
       "Peserta wajib mengirimkan karya asli yang belum pernah dipublikasikan dan belum pernah menjadi juara pada lomba sebelumnya dan juga tidak sedang diikutkan dalam lomba lain.",
       "Segala bentuk kecurangan dan plagiarisme akan dikenakan sanksi berupa pengurangan nilai, diskualifikasi serta pembatalan status sebagai peserta.",
     ],
-    source: "@its_manifest",
+    account: "@its_manifest",
     poster: businescase,
-    guidebook: "intip.in/GuidanceBookMBCC2023",
+    guidebook: "https://intip.in/GuidanceBookMBCC2023",
+    source: "https://www.instagram.com/p/CvUn9kBpJp2/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
   },
   {
     id: 3,
     title: "UI/UX DESIGN COMPETITION SMART IT FEST 2023",
     category: "teknologi",
     regisdate: "8 - 22 Agustus 2023",
-    timeline: [
+    timelines: [
       "Pendaftaran : 8-22 Agustus 2023",
       "Batas pengumpulan karya : 23 Agustus 2023",
       "Pengumuman hasil penyisihan : 17 September 2023",
@@ -104,7 +106,7 @@ export const competitions = [
       "Presentasi final & pengumuman juara : 1 Oktober 2023",
     ],
     price: "Rp. 30.000",
-    link: ["https://uns.id/PrototypeVideoUIUXSIF23", "https://uns.id/PengumpulanKaryaSIF2023"],
+    link: ["https://uns.id/PengumpulanKaryaSIF2023"],
     requirements: [
       "Tiap peserta hanya boleh mengambil satu platform yang akan dijadikan sebagai studi kasus. Bisa platform web atau mobile.",
       "Peserta harus mengumpulkan studi kasus dalam bentuk .pdf, dengan format “DESAIN UI/UX SIF2023_<Nama Tim>”.pdf pada link : https://uns.id/PengumpulanKaryaSIF2023",
@@ -114,16 +116,17 @@ export const competitions = [
       "Karya yang dilombakan belum pernah diikutsertakan dalam kompetisi sejenis, dan belum pernah dipublikasikan dalam bentuk apapun.",
       "Karya tidak boleh mengandung unsur pornografi, SARA, sadisme atau hal-hal yang bersifat merendahkan atau melecehkan pihak lain.",
     ],
-    source: "@smartitfestofficial",
+    account: "@smartitfestofficial",
     poster: uiux,
-    guidebook: "uns.id/guidebookuiuxsif23",
+    guidebook: "https://uns.id/guidebookuiuxsif23",
+    source: "https://www.instagram.com/stories/highlights/18273246031158669/",
   },
   {
     id: 4,
     title: "TRACIVAL LOMBA ESAI ILMIAH",
     category: "umum",
     regisdate: "1 - 16 Agustus 2023",
-    timeline: [
+    timelines: [
       "Pendaftaran Gelombang 2 : 1 - 16 Agustus 2023",
       "Pengumpulan : 1 - 18 Agustus 2023",
       "Penjurian : 19 - 26 Agustus 2023",
@@ -133,7 +136,7 @@ export const competitions = [
       "Pengumuman lomba & seminar nasional : 3 September 2023",
     ],
     price: "Gratis",
-    link: ["bit.ly/RegistrasiTRACIVAL2023"],
+    link: ["https://bit.ly/RegistrasiTRACIVAL2023"],
     requirements: [
       "Peserta merupakan individu atau tim (maksimal 3 orang)",
       "Peserta merupakan Mahasiswa Aktif, dibuktikan dengan melampirkan KTM (Kartu Tanda Mahasiswa)",
@@ -141,16 +144,17 @@ export const competitions = [
       "Naskah esai dibuat sesuai dengan tema dan sub tema dari pilihan yang ada",
       "Masing-masing tim hanya bisa mengirimkan 1 naskah esai",
     ],
-    source: "@tracival_untirta",
+    account: "@tracival_untirta",
     poster: esaiilmiah,
-    guidebook: "bit.ly/GuideTRACIVAL2023",
+    guidebook: "https://bit.ly/GuideTRACIVAL2023",
+    source: "https://www.instagram.com/p/CvY5eo9LqrJ/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
   },
   {
     id: 5,
     title: "Tournament DB Klik Mobile Legend",
     category: "gaming",
     regisdate: "4 - 17 Agustus 2023 ",
-    timeline: ["Pendaftaran : 4 - 17 Agusutus 2023 ", "Match day : 21 - 31 Agustus 2023"],
+    timelines: ["Pendaftaran : 4 - 17 Agusutus 2023 ", "Match day : 21 - 31 Agustus 2023"],
     price: "Gratis",
     link: ["https://linktr.ee/dbkliksby"],
     requirements: [
@@ -160,9 +164,10 @@ export const competitions = [
       "Seorang/pemain hanya dapat berpartisipasi dalam 1 tim",
       "Pemain yang ditemukan tidak mengikuti aturan resmi dapat diberhentikan dari turnamen",
     ],
-    source: "@dbklik.id",
+    account: "@dbklik.id",
     poster: dbklik,
-    guidebook: "tidak ada guidebook",
+    guidebook: "",
+    source: "https://www.instagram.com/p/CvhFc2IO0rS/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==",
   },
 ];
 

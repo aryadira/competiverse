@@ -43,7 +43,7 @@ export const Home = {
     defaultHeading: "mb-4 tracking-tight leading-none text-gray-700 dark:text-light",
     fontWeightBold: "font-bold",
     fontWeightExtrabold: "font-extrabold",
-    fontSize1: "text-5xl md:text-5xl lg:text-4xl",
+    fontSize1: "text-4xl md:text-4xl lg:text-4xl",
     fontSize2: "text-3xl",
     width: "w-[350px] sm:w-[200px]",
   },
