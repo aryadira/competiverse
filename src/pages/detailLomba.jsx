@@ -88,7 +88,7 @@ const DetailLomba = () => {
                 <h2 className='font-semibold text-[24px] text-[#444444] text-center mb-5'>Syarat-syarat:</h2>
                 <ol className='requirement text-left leading-8 '>
                   {competition.requirements.map((requirement) => (
-                    <li key={requirement} className='bg-[#f1f9ff] text-[#13354f] w-full px-8 py-4 rounded-2xl my-3 '>
+                    <li key={requirement} className='bg-[#f2f6f6] text-[#13354f] w-full px-8 py-4 rounded-2xl my-3 '>
                       {requirement}
                     </li>
                   ))}

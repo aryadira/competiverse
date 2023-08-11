@@ -23,7 +23,7 @@ const Card = () => {
   }
 
   return (
-    <div className='w-full h-auto grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 '>
+    <div className='w-full h-auto grid xl:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 mb-5'>
       {competitions.map((competition) => (
         // eslint-disable-next-line react/jsx-key
         <a
