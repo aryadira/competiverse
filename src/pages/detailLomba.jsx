@@ -51,7 +51,7 @@ const DetailLomba = () => {
           <div className='flex items-center flex-col justify-center mb-10 mt-[100px]'>
             <div className='header'>
               <div className='text-center'>
-                <p className={`${labelColor(competition.category)}`}>{competition.category}</p>
+                <p className={`${labelColor(competition.category)} mb-3`}>{competition.category}</p>
                 <h3 className='mt-[3px] font-[900] text-[38px] text-[#444444]'>{competition.title}</h3>
                 <p className='mb-5 text-gray-400 text-xl'>Pendaftaran : {competition.regisdate}</p>
               </div>
@@ -74,7 +74,7 @@ const DetailLomba = () => {
                 </div>
                 <div className='flex items-center flex-col'>
                   <h3 className='text-xl font-semibold text-[#444]'>Peserta</h3>
-                  <h4 className='text-xl font-semibold text-mainColor'>1000</h4>
+                  <h4 className='text-xl font-semibold text-mainColor'>-</h4>
                 </div>
               </div>
             </div>
@@ -100,7 +100,7 @@ const DetailLomba = () => {
             {/*  timeline */}
             <div className='timeline my-[100px]'>
               <h2 className='font-semibold text-[24px] text-[#444444] text-center mb-5'>Timeline</h2>
-              <ol className='w-full grid grid-cols-5 gap-5 my-[50px]'>
+              <ol className='w-full grid lg:grid-cols-5 grid-cols-1 gap-5 my-[50px]'>
                 {competition.timelines.map((timeline) => (
                   <li
                     className='flex items-center text-blue-600 dark:text-blue-500 rounded-lg bg-white py-3 px-4 border-mainColor border-2'
