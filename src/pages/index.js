@@ -5,5 +5,7 @@ import Login from "./Login";
 import Lomba from "./Lomba";
 import Register from "./Register";
 import Riwayat from "./Riwayat.jsx";
+import DetailLomba from "./DetailLomba";
+import NotFound from "./NotFound";
 
-export { Beranda, Jadwal, LandingPage, Login, Lomba, Register, Riwayat };
+export { Beranda, Jadwal, LandingPage, Login, Lomba, Register, Riwayat, DetailLomba, NotFound };

@@ -1,15 +1,12 @@
-import React from "react";
-import { Beranda, LandingPage, Lomba } from "../pages";
-import { Navbar } from "../components/";
-import { Link } from "react-router-dom";
-import Container from "./Container";
+import { Navbar, Footer, Card } from "../components/";
+import BoxContainer from "./BoxContainer";
 import Routing from "../routes/Routing";
 
 const Main = () => {
   const pages = {
     index: "/",
     beranda: "/beranda",
-    jadwal: "jadwal",
+    jadwal: "/jadwal",
     lomba: "/lomba",
     riwayat: "/riwayat",
     login: "/login",
@@ -17,11 +14,12 @@ const Main = () => {
   };
 
   return (
-    <main>
+    <main className='bg-baseColor relative h-max'>
       <Navbar pages={pages} />
-      <Container className='bg-red-500'>
+      <BoxContainer className='pt-[70px]'>
         <Routing pages={pages} />
-      </Container>
+      </BoxContainer>
+      <Footer />
     </main>
   );
 };
