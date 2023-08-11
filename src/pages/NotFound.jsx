@@ -1,5 +1,5 @@
 const NotFound = () => {
-  return <div>404</div>;
+  return <div className='flex justify-center items-center h-screen'>404</div>;
 };
 
 export default NotFound;

@@ -30,7 +30,7 @@ const Beranda = (props) => {
             <div
               id='medium-modal'
               tabindex='-1'
-              className='fixed top-0 left-0 right-0 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full z-[100]'>
+              className='fixed backdrop-blur-sm top-0 left-0 right-0 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-screen max-h-full z-[100]'>
               <div className='relative w-full max-w-lg max-h-full'>
                 <div className='relative bg-white rounded-lg shadow dark:bg-gray-700 p-5'>
                   <ModalSearch />

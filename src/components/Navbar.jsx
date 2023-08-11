@@ -28,13 +28,13 @@ const Navbar = ({ pages, ...props }) => {
                 data-dropdown-trigger='hover'>
                 Lomba
               </NavLink>
-              </li>
+            </li>
             <li>
               <NavLink to={pages.jadwal} className={`${headerStyle.link.base} ${headerStyle.link.hoverText}`}>
                 Jadwal
               </NavLink>
             </li>
-            <li>
+            <li onClick={refreshPage}>
               <NavLink to={pages.riwayat} className={`${headerStyle.link.base} ${headerStyle.link.hoverText}`}>
                 Riwayat
               </NavLink>
