@@ -123,7 +123,7 @@ export const competitions = [
   },
   {
     id: 4,
-    title: "TRACIVAL LOMBA ESAI ILMIAH",
+    title: "Travical Lomba Esai Ilmiah",
     category: "umum",
     regisdate: "1 - 16 Agustus 2023",
     timelines: [

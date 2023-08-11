@@ -2,15 +2,15 @@ import { Home } from "../style";
 import {competitions, categories, recomends} from '../constants'
 import { tabElements, options }from '../constants/riwayat'
 import '../style'
+import { Button } from "../components";
 
 const Riwayat = (props) => {
 
   const colorTextCategories = {
-    base: "category text-[20px] text-center font-bold flex items-center cursor-pointer",
-    teknologi: "text-blue-500",
-    visual: "text-purple-500",
-    umum: "text-green-500",
-    gaming: "text-pink-500",
+    teknologi: "text-xs py-[1px] px-2 bg-blue-100 border-[1px] text-blue-400 border-blue-300 inline-block rounded-full",
+    visual: "text-xs py-[1px] px-2 bg-purple-100 border-[1px] text-purple-400 border-purple-300 inline-block rounded-full",
+    umum: "text-xs py-[1px] px-2 bg-green-100 border-[1px] text-green-400 border-green-300 inline-block rounded-full",
+    gaming: "text-xs py-[1px] px-2 bg-pink-100 border-[1px] text-pink-400 border-pink-300 inline-block rounded-full",
   };
 
   function labelColor(category) {
@@ -85,16 +85,20 @@ const Riwayat = (props) => {
       <div id="myTabContent">
           <div className="hidden p-4 rounded-lg" id="profile" role="tabpanel" aria-labelledby="profile-tab">
           {competitions.map((competition) => (
-            <div className="flex bg-white h-[35vh] w-full p-[15px] my-[10px] drop-shadow-md rounded-xl">
+            <div className="flex bg-white h-[35vh] w-full p-[15px] my-[10px] relative drop-shadow-md rounded-xl">
               <img src={competition.poster} alt="" srcset="" className="w-[40vh] object-cover object-top rounded-md"/>
-              <div className="m-[20px] w-[50vh]">
+              <div className="mx-[20px] my-[10px] w-[100vh] relative">
                 <h1 className="">
                   <a href="" className="font-extrabold text-[30px] text-[#444444] hover:text-[#6a5ae0]">
                   {competition.title}
                   </a>
-                  <p className="text-[#444444]">{competition.regisdate}</p>
-                  <p className={`text-[20px] ${colorTextCategories.base} ${labelColor(competition.category)}`}>{ `${competition.category.charAt(0).toUpperCase()}${competition.category.slice(1)}`}</p>
                 </h1>
+                <p className="text-[#444444]">{competition.regisdate}</p>
+                <p className={`text-[20px] bg- transparent w-max p-[5px] rounded-full border ${colorTextCategories.base} ${labelColor(competition.category)}`}>{ `${competition.category.charAt(0).toUpperCase()}${competition.category.slice(1)}`}</p>
+                <h3 className="absolute bottom-0 text-blue-500 text-xl font-bold">{competition.price}</h3>
+              </div>
+              <div className="absolute bottom-0 right-0">
+                <Button href="" children="Daftar" className="rounded-bl-none rounded-tr-none"/>
               </div>
             </div>
           ))}
