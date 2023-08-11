@@ -103,8 +103,24 @@ const Riwayat = (props) => {
             </div>
           ))}
           </div>
-          <div className="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
-              <p className="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong className="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+          <div className="hidden p-4 rounded-lg" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+          {competitions.map((competition) => (
+            <div className="flex bg-white h-[35vh] w-full p-[15px] my-[10px] relative drop-shadow-md rounded-xl">
+              <img src={competition.poster} alt="" srcset="" className="w-[40vh] object-cover object-top rounded-md"/>
+              <div className="mx-[20px] my-[10px] w-[100vh] relative">
+                <h1 className="">
+                  <a href="" className="font-extrabold text-[30px] text-[#444444] hover:text-[#6a5ae0]">
+                  {competition.title}
+                  </a>
+                </h1>
+                <p className="text-[#444444]">{competition.regisdate}</p>
+                <p className={`text-[20px] bg- transparent w-max p-[5px] rounded-full border ${colorTextCategories.base} ${labelColor(competition.category)}`}>{ `${competition.category.charAt(0).toUpperCase()}${competition.category.slice(1)}`}</p>
+                <div className="absolute bottom-0">
+                  <Button href="" children="Review" className=""/>
+                </div>
+              </div>
+            </div>
+          ))}
           </div>
       </div>
     </section>
