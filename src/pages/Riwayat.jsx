@@ -1,21 +1,40 @@
-import React from "react";
-import '../style'
 import { Home } from "../style";
-import {competitions, recomends} from '../constants'
+import {competitions, categories, recomends} from '../constants'
+import { tabElements, options }from '../constants/riwayat'
+import '../style'
 
 const Riwayat = (props) => {
+
+  const colorTextCategories = {
+    base: "category text-[20px] text-center font-bold flex items-center cursor-pointer",
+    teknologi: "text-blue-500",
+    visual: "text-purple-500",
+    umum: "text-green-500",
+    gaming: "text-pink-500",
+  };
+
+  function labelColor(category) {
+    if (category == "teknologi") {
+      return colorTextCategories.teknologi;
+    } else if (category == "visual") {
+      return colorTextCategories.visual;
+    } else if (category == "umum") {
+      return colorTextCategories.umum;
+    } else if (category == "gaming") {
+      return colorTextCategories.gaming;
+    }
+  }
+
   return (
-    <>
+    <section>
     <section id="Jumbotron">
-      <div className="flex flex-wrap justify-center items-center w-full h-[100vh] sm:h-[70vh]">
+      <div className="flex justify-center items-center w-full h-[70vh]">
         <div id="default-carousel" className="relative w-[70vh]" data-carousel="slide">
           <div className="relative h-auto backdrop-blur-xl overflow-hidden rounded-lg md:h-96">
-            {competitions.map((recomend) => (
-              <>
+            {competitions.map((competition) => (
               <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src={recomend.poster} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."></img>
+                <img src={competition.poster} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."></img>
               </div>
-              </>
               ))}
             </div>
             <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
@@ -42,7 +61,7 @@ const Riwayat = (props) => {
                 </span>
             </button>
         </div>
-        <div className="text-center h-[20vh] w-[100vh] flex items-center">
+        <div className="text-center h-[70vh] p-[10px] w-[100vh] flex items-center">
           <div>
             <h1 className="text-[50px] font-extrabold"><span className={`${Home.baseColor}`}>Riwayat.</span> Lakukan pendaftaran dengan mudah dan cepat!!</h1>
             <p className="text-[20px]">Find any experience from the competitions</p>
@@ -52,10 +71,40 @@ const Riwayat = (props) => {
     </section>
 
     {/* Card */}
-    <section id="riwayatCard">
-      
+    <section id="riwayatCard" className="h-auto">
+      <div className="mb-4 w-[53vh] border-b border-gray-200 dark:border-gray-700">
+          <ul className="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+              <li className="mr-2" role="presentation">
+                  <button className="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Riwayat Kunjungan</button>
+              </li>
+              <li className="mr-2" role="presentation">
+                  <button className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Riwayat Pendafataran</button>
+              </li>
+          </ul>
+      </div>
+      <div id="myTabContent">
+          <div className="hidden p-4 rounded-lg" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          {competitions.map((competition) => (
+            <div className="flex bg-white h-[35vh] w-full p-[15px] my-[10px] drop-shadow-md rounded-xl">
+              <img src={competition.poster} alt="" srcset="" className="w-[40vh] object-cover object-top rounded-md"/>
+              <div className="m-[20px] w-[50vh]">
+                <h1 className="">
+                  <a href="" className="font-extrabold text-[30px] text-[#444444] hover:text-[#6a5ae0]">
+                  {competition.title}
+                  </a>
+                  <p className="text-[#444444]">{competition.regisdate}</p>
+                  <p className={`text-[20px] ${colorTextCategories.base} ${labelColor(competition.category)}`}>{ `${competition.category.charAt(0).toUpperCase()}${competition.category.slice(1)}`}</p>
+                </h1>
+              </div>
+            </div>
+          ))}
+          </div>
+          <div className="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+              <p className="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong className="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+          </div>
+      </div>
     </section>
-    </>
+    </section>
   )
 };
 

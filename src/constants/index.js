@@ -95,7 +95,7 @@ export const competitions = [
   },
   {
     id: 3,
-    title: "UI/UX DESIGN COMPETITION SMART IT FEST 2023",
+    title: "UI/UX Design Competition Smart IT Fest 2023",
     category: "teknologi",
     regisdate: "8 - 22 Agustus 2023",
     timelines: [
