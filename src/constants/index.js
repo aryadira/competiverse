@@ -70,7 +70,7 @@ export const competitions = [
     category: "teknologi",
     regisdate: "30 Juli - 3 September 2023",
     timelines: [
-      "30 Juli - 3 September 2023",
+      "Pendaftaran : 30 Juli - 3 September 2023",
       "Preliminary Stage : 4 September - 10 September 2023",
       "Pengumuman Lolos ke Babak Semifinal : 17 September 2023",
       "Semifinal Stage : 18 September - 1 Oktober 2023",

@@ -40,7 +40,7 @@ const DetailLomba = () => {
   return (
     <section className=''>
       <a href='/lomba'>
-        <div className='py-3 px-4 bg-white mt-[20px] inline-block rounded-full shadow-sm'>
+        <div className='py-3 px-4 bg-white mt-[20px] inline-block rounded-full shadow-sm fixed'>
           <AiOutlineArrowLeft />
         </div>
       </a>
@@ -48,7 +48,7 @@ const DetailLomba = () => {
       <div className='w-full h-auto grid '>
         {result.map((competition) => (
           // eslint-disable-next-line react/jsx-key
-          <div className='flex items-center flex-col justify-center mb-10 mt-[50px]'>
+          <div className='flex items-center flex-col justify-center mb-10 mt-[100px]'>
             <div className='header'>
               <div className='text-center'>
                 <p className={`${labelColor(competition.category)}`}>{competition.category}</p>
@@ -78,11 +78,13 @@ const DetailLomba = () => {
                 </div>
               </div>
             </div>
+
+            {/* content */}
             <div className='content grid-cols-1 grid lg:grid-cols-2 gap-8'>
-              <div className='left flex justify-around items-start'>
-                <img src={competition.poster} className='object-contain rounded' />
+              <div className='left flex justify-between items-start'>
+                <img src={competition.poster} className='object-contain rounded w-full' />
               </div>
-              <div className='right p-7 rounded-lg bg-white h-max'>
+              <div className='right p-7 rounded-lg bg-white shadow-sm h-max'>
                 <h2 className='font-semibold text-[24px] text-[#444444] text-center mb-5'>Syarat-syarat:</h2>
                 <ol className='requirement text-left leading-8 '>
                   {competition.requirements.map((requirement) => (
@@ -96,16 +98,20 @@ const DetailLomba = () => {
             </div>
 
             {/*  timeline */}
-            <ol className='items-center w-full space-y-4 sm:flex sm:space-x-8 sm:space-y-0'>
-              <li className='flex items-center text-blue-600 dark:text-blue-500 space-x-2.5'>
-                <span className='flex items-center justify-center w-8 h-8 border border-blue-600 rounded-full shrink-0 dark:border-blue-500'>
-                  {competition.timelines.length}
-                </span>
-                <span>
-                  <p className='text-sm'>{competition.timelines}</p>
-                </span>
-              </li>
-            </ol>
+            <div className='timeline my-[100px]'>
+              <h2 className='font-semibold text-[24px] text-[#444444] text-center mb-5'>Timeline</h2>
+              <ol className='w-full grid grid-cols-5 gap-5 my-[50px]'>
+                {competition.timelines.map((timeline) => (
+                  <li
+                    className='flex items-center text-blue-600 dark:text-blue-500 rounded-lg bg-white py-3 px-4 border-mainColor border-2'
+                    key={timeline}>
+                    <span className='text-[#444]'>
+                      <span className='text-md'>{timeline}</span>
+                    </span>
+                  </li>
+                ))}
+              </ol>
+            </div>
           </div>
         ))}
       </div>
