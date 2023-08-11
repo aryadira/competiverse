@@ -18,7 +18,7 @@ const Jumbotron = ({ heading, paragraph, ...props }) => {
             berbagai penyelenggara. Kemudahan dan efisiensinya membuat proses pencarian lomba menjadi jauh lebih praktis dan efektif.
           </p>
           <div className='flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4'>
-            <Button children='Get Started' />
+            <Button children='Get Started' href={`/beranda`} />
           </div>
         </div>
         <div className='right flex md:justify-end lg:my-0 mt-20 justify-center items-center'>
