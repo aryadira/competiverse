@@ -11,56 +11,45 @@ berbagai penyelenggara. Kemudahan dan efisiensinya membuat proses pencarian lomb
 
 ### Installing
 
-- First of All, you can install Node.js to use npm
-- The Second, You can Copied the Repository to get a file
+- First of All, Kamu bisa install Node.js untuk menggunakan npm
+- Lalu, Kamu bisa klik kanan pada filenya dan klik "Open Git Bash Here"
+- Ketiga, Kamu bisa copy link Repository untuk mendapatkan filenya
 
 ```javascript
 https://github.com/Adiptra/Competiverse.git
 ```
-- Any modifications needed to be made to files/folders
+
+- Pastekan pada Terminal Gitnya
 
 ### Executing program
 
-- How to run the program
-- Step-by-step bullets
+- Jika sudah kita bisa ketik kode dibawah ini untuk menginstall semua package yang digunakan pada file
 
+```javascript
+npm i
 ```
-code blocks for commands
-```
 
-## Help
+- Tunggu beberapa saat dan ketik code di bawah ini untuk menjalankan webnya
 
-Any advise for common problems or issues.
-
-```
-command to run if program contains helper info
+```javascript
+npm run dev
 ```
 
 ## Authors
 
-Contributors names and contact info
+Developer dari Competiverse
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Instagram :
+
+- [@adipptra\_](https://www.instagram.com/adipptra_)
+- [@aryaadrh\_](https://www.instagram.com/aryaadrh_)
+- [@amilazhira](https://www.instagram.com/amilazhira)
 
 ## Version History
 
-- 0.2
-  - Various bug fixes and optimizations
-  - See [commit change]() or See [release history]()
 - 0.1
-  - Initial Release
+  - First Release
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-
-- [awesome-readme](https://github.com/matiassingers/awesome-readme)
-- [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-- [dbader](https://github.com/dbader/readme-template)
-- [zenorocha](https://gist.github.com/zenorocha/4526327)
-- [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+This project is licensed under the [Competiverse] License
